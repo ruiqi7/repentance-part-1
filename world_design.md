@@ -5,7 +5,7 @@
 The world seen by the player is a maze with an aesthetic style inspired by the Maze Runner. It is 3D and will be displayed on a single screen. Only one level will be available, however, the maze will be randomly generated and change each time the game is played. This allows the game to be replayed multiple times. The player starts in the centre of the maze and will have to navigate through the maze by exploring and avoiding ghosts. Hints may be available to the player if they find them in the maze, however, no map/minimap will be available as it would defeat the purpose of the maze. 
 
 <p align="center">
-  <img src="Images/ExampleMaze.png" width=400>
+  <img src="Images/MazeDiagram.png" width=400>
 </p>
 
 
