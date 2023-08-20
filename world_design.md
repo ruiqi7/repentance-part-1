@@ -17,7 +17,7 @@ The world seen by the player is a maze with an aesthetic style inspired by the M
 - The player can collect other items such as weapons to slow down the monsters and prevent them from chasing the player. The player will be able to throw certain objects.
 
 <p align="center">
-  <img src="Images/PlayerHoldingWeapon.gif" width=300 height=150>
+  <img src="Images/PlayerHoldingWeapon.gif" width=400 height=150>
 </p>
 
 
