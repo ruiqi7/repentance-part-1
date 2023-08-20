@@ -20,7 +20,7 @@ Set in a maze with horror elements, the game is targeted at players who are draw
 ### 1.4 Unique Selling Points
 
 #### 1.4.1 Compelling Storyline
-Repentance follows a storyline that progressively unfolds as the game scales in difficulty. The player’s role is not only to survive, but also to uncover the gruesome truth about his / her family and face the consequences of their past actions. The intertwining of survival and story progression creates an immersive experience that keeps players emotionally engaged.
+Repentance follows a storyline that progressively unfolds as the game scales in difficulty. The player’s role is not only to survive, but also to uncover the gruesome truth about their family and face the consequences of their past actions. The intertwining of survival and story progression creates an immersive experience that keeps players emotionally engaged.
 
 #### 1.4.2 Appealing Aesthetic
 Inspired by the dystopian science fiction film ‘Maze Runner’ (left), the game features a pixelated maze-like environment where the walls are overgrown with foliage (right). The pixelated graphics style creates a nostalgic retro feel while the foliage, just as it conceals the features of the maze, symbolizes the hidden secrets and dangers that lurk in the player’s world.
@@ -31,7 +31,7 @@ Inspired by the dystopian science fiction film ‘Maze Runner’ (left), the gam
 </p>
 
 #### 1.4.3 Unique Mechanics
-Other than the standard player health, Repentance includes player stamina as a gameplay mechanic that reflects a realistic physical limitation of the player’s character and heightens the challenge of the game. Stamina will allow the player to walk or run away from the monsters, with running incurring a faster depletion of stamina. Stamina can be gained if the player rests or collects certain items scattered around the maze. Having to balance multiple resources adds depth to the gameplay and encourages the player to think strategically.
+Other than the standard player health, Repentance includes player stamina as a gameplay mechanic that reflects a realistic physical limitation of the player’s character and heightens the challenge of the game. Stamina allows the player to run away from the monsters and gradually replenishes when the player walks. Having to balance multiple resources adds depth to the gameplay and encourages the player to think strategically.
 
 <p align="center">
     <img src="Images/Health_Stamina_Bars.png" width=300 height=150>
