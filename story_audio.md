@@ -44,12 +44,15 @@ Our playable character by some stroke of misfortune has found themselves in fron
 - Retro Style, Playstation 1 Graphics
 - Use of pixelated art
 - Dark , sinister , uncomforting, Horrifying
-
-<img src="Images/ps1_horror.jfif" width="400">
+<p align="center">
+    <img src="Images/ps1_horror.jfif" width="400">
+</p>
 
 Overall we intended on implementing with intentionally lower quality graphics. As stylistically, this may allow the player’s mind to fill in the gaps, in a sense lowering the quality likewise indicates somewhat of a detachment from reality, in this case the intention is to further exacerbate the uncaniness of the situation, something that appears to be similar yet also different. Additionally, the art style allows for the natural depiction of hard edges compared to smoothness that may commonly be associated with higher graphic quality. 
 
-<img src="Images/siren_head.gif" width="400"> <img src="Images/baldis_basic.png" width="400">
+<p align="center">
+    <img src="Images/siren_head.gif" width="400"> <img src="Images/baldis_basic.png" width="400">
+</p>
 
 ### Audio 
 
