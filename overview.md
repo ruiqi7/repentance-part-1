@@ -8,9 +8,11 @@ Repentance is a survival horror game. The player is challenged to survive for 5 
 
 <p align="center">
     <img src="Images/Slender.png" width=300 height=150>
-    <audio src="Audio/horror-sound-effect.mp3" controls title="Horror Sound Effect"></audio>
-    <audio src="Audio/monster-growl.mp3" controls title="Monster Growl"></audio>
 </p>
+
+[Horror Sound Effect](./Audio/horror-sound-effect.mp3)
+
+[Monster Growl](./Audio/monster-growl.mp3)
 
 ### 1.3 Target Audience
 Set in a maze with horror elements, the game is targeted at players who are drawn to experiencing thrill in a controlled environment. Additionally, the 5-minute time constraint on the game makes it suitable for players who prefer or can only afford to play in short bursts.
@@ -21,7 +23,7 @@ Set in a maze with horror elements, the game is targeted at players who are draw
 Repentance follows a storyline that progressively unfolds as the game scales in difficulty. The player’s role is not only to survive, but also to uncover the gruesome truth about his / her family and face the consequences of their past actions. The intertwining of survival and story progression creates an immersive experience that keeps players emotionally engaged.
 
 #### 1.4.2 Appealing Aesthetic
-Inspired by the dystopian science fiction film ‘Maze Runner’ (top image), the game features a pixelated maze-like environment where the walls are overgrown with foliage (bottom image). The pixelated graphics style creates a nostalgic retro feel while the foliage, just as it conceals the features of the maze, symbolizes the hidden secrets and dangers that lurk in the player’s world.
+Inspired by the dystopian science fiction film ‘Maze Runner’ (left), the game features a pixelated maze-like environment where the walls are overgrown with foliage (right). The pixelated graphics style creates a nostalgic retro feel while the foliage, just as it conceals the features of the maze, symbolizes the hidden secrets and dangers that lurk in the player’s world.
 
 <p align="center">
     <img src="Images/Maze_Runner.png" width=300 height=150>
