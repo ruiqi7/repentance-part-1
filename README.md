@@ -85,6 +85,11 @@ Our playable character by some stroke of misfortune has found themselves in fron
   - Child : Hide and Seek, The player needs to hide
 - NPC : These can be encountered in the maze, they can either help or increase the difficulty of the game.
 
+#### 2.3.1 Monster Drafting
+<p align="center">
+    <img src="Images/monster_draft_1.png" width=400>
+    <img src="Images/monster_draft_2.png" width=400>
+</p>
 
 ## 3. Game Mechanics
 
