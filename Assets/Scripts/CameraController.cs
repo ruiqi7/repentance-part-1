@@ -13,7 +13,7 @@ public class CameraController : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
-    void Update()
+    private void LateUpdate()
     {
         // Mouse Input
         float mouseX = Input.GetAxis("Mouse X") * Time.deltaTime * sens;
