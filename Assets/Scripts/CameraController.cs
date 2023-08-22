@@ -16,8 +16,8 @@ public class CameraController : MonoBehaviour
     private void LateUpdate()
     {
         // Mouse Input
-        float mouseX = Input.GetAxis("Mouse X") * Time.deltaTime * sens;
-        float mouseY = Input.GetAxis("Mouse Y") * Time.deltaTime * sens;
+        float mouseX = Input.GetAxisRaw("Mouse X") * Time.deltaTime * sens;
+        float mouseY = Input.GetAxisRaw("Mouse Y") * Time.deltaTime * sens;
 
         xRotation -= mouseY;
         xRotation = Math.Clamp(xRotation, -90f, 90f);

@@ -10,8 +10,8 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         // Keyboard Input
-        float xMove = Input.GetAxis("Horizontal");
-        float zMove = Input.GetAxis("Vertical");
+        float xMove = Input.GetAxisRaw("Horizontal");
+        float zMove = Input.GetAxisRaw("Vertical");
         Vector3 move = transform.right * xMove + transform.forward * zMove;
         player.Move(move * speed * Time.deltaTime);
     }
