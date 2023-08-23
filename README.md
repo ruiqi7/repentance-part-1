@@ -204,11 +204,17 @@ The world seen by the player is a maze with an aesthetic style inspired by the M
 <p align="center">
     <img src="Images/ps1_horror.jfif" width="400">
 </p>
-
+<p align="center">
+    <i>Image: Game (In The Mountains) by decestiadev 2021</i>
+</p>
+ 
 Overall the intention is to implement lower quality graphics. As stylistically, this may allow additional details to be filled in by the player’s mind. In addition, lowering the quality may indicate some level of detachment from reality, in this case the intention is to further exacerbate the uncaniness of the situation, something that appears to be similar yet also different. Furthermore, the art style allows for the natural depiction of hard edges compared to smoothness that may commonly be associated with higher graphic quality. This reliance on hard edges in graphics may subconciously alert the player, keeping them uncomfortable and on edge.
 
 <p align="center">
     <img src="Images/siren_head.gif" width="400"> <img src="Images/baldis_basic.png" width="400">
+</p>
+<p align="center">
+    <i>Image: Game (Siren Head) by Modus Interactive 2018 & Image: Game (Baldi's Basics) by Micah McGonigal 2018</i>
 </p>
 
 ### 5.2 Audio 
@@ -230,6 +236,11 @@ Stylistic examples of intended Game music:
 [Roaming](./Audio/atmosphere.wav) 
 
 [Ambience](./Audio/sense_of_dread.wav)
+
+Music Referenced:
+
+*Resident Evil 7 Original Soundtrack composed by: 
+Akiyuki  Morimoto, Satoshi Hori, Miwako Chinone, Brian D'Olivera, Cris Velasco. 2017*
 
 ### 5.5 Assets 
 
