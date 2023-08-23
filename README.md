@@ -136,7 +136,7 @@ The limitation of the sprint ability, along with the use of different light leve
 
 ### 4.1 Game World 
 
-The world seen by the player is a maze with an aesthetic style inspired by the Maze Runner. It is 3D and will be displayed on a single screen. Only one level will be available, however, the maze will be randomly generated and change each time the game is played. This allows the game to be replayed multiple times. The player starts in the centre of the maze and will have to navigate through the maze by exploring and avoiding ghosts. Hints may be available to the player if they find them in the maze, however, no map/minimap will be available as it would defeat the purpose of the maze. 
+The world seen by the player is a maze with an aesthetic style inspired by the Maze Runner. It is 3D and will be displayed on a single screen. Only one level will be available, however, the maze will be randomly generated and change each time the game is played. This allows the game to be replayed multiple times. The player will also be able to change the difficulty. The player starts in the centre of the maze and will have to navigate through the maze by exploring and avoiding ghosts. Hints may be available to the player if they find them in the maze, however, no map/minimap will be available as it would defeat the purpose of the maze. 
 
 <p align="center">
   <img src="Images/MazeDiagram.png" width=400>
@@ -145,22 +145,19 @@ The world seen by the player is a maze with an aesthetic style inspired by the M
 
 ### 4.2 Objects 
 
-- Tombstones. Players can destroy tombstones or interact with them in some way to unlock lore. 
+- Tombstones. Player can destroy tombstones or interact with them in some way to unlock lore. 
   <p align="center">
   <img src="Images/Tombstone.png" width=300>
   </p>
-- Heirloom. Looks like an old knife/ weapon. 
+- Heirloom. Looks like an old knife/ weapon. Can be found in the maze. 
   <p align="center">
   <img src="Images/Heirloom.png" width=300>
-  </p>
-  <p align="center">
-  <img src="Images/PlayerHoldingWeapon.gif" width=300 height=150>
   </p>
 - Flashlight. Starts in the player’s inventory. Player can turn it on or off.
   <p align="center">
   <img src="Images/Flashlight.png" width=200>
   </p>
-- The player can collect other items to affect gameplay or the storyline
+- The player can collect other items throught the maze to affect gameplay or the storyline:
   - Eyeballs in a Jar (NPC Item)
     <p align="center">
     <img src="Images/Eyeballs.png" width=200>
