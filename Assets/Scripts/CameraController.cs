@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    public float sens = 100f;
+    [Range(1,20)]public int sens = 8;
     float xRotation = 0f;
     public Transform player;
     void Start()
