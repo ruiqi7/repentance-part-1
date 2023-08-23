@@ -284,7 +284,7 @@ In terms of utilising pre-built assets, they will typically be sourced from the 
 - Trello (Task Management)
 - Google Docs (Documentation and Planning)
 
-### Project Breakdown
+### 8.1 Project Breakdown
 - World design, audio and maze generation
 - Character and camera
 - Menus, UI, cutscenes and storyline progression
