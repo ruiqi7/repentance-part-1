@@ -146,21 +146,53 @@ The world seen by the player is a maze with an aesthetic style inspired by the M
 ### 4.2 Objects 
 
 - Tombstones. Players can destroy tombstones or interact with them in some way to unlock lore. 
+  <p align="center">
+  <img src="Images/Tombstone.png" width=300>
+  </p>
 - Heirloom. Looks like an old knife/ weapon. 
-- Flashlight. Starts in the player’s inventory. Player can turn it on or off.
-- The player can collect other items such as weapons to slow down the monsters and prevent them from chasing the player.
-
-<p align="center">
+  <p align="center">
+  <img src="Images/Heirloom.png" width=300>
+  </p>
+  <p align="center">
   <img src="Images/PlayerHoldingWeapon.gif" width=300 height=150>
-</p>
+  </p>
+- Flashlight. Starts in the player’s inventory. Player can turn it on or off.
+  <p align="center">
+  <img src="Images/Flashlight.png" width=200>
+  </p>
+- The player can collect other items to affect gameplay or the storyline
+  - Eyeballs in a Jar (NPC Item)
+    <p align="center">
+    <img src="Images/Eyeballs.png" width=200>
+    </p>
+  - Broken Doll (Distracts the ghost child)
+    <p align="center">
+    <img src="Images/Doll.png" width=200>
+    </p>
+  - Candle (Can be placed on the graves)
+    <p align="center">
+    <img src="Images/Candle.png" width=200>
+    </p>
+  - Withered Flower (Can be placed on the graves)
+    <p align="center">
+    <img src="Images/Flower.png" width=200>
+    </p>
+  - Torn Letter (Reveals lore)
+    <p align="center">
+    <img src="Images/Letter.png" width=200>
+    </p>
+  - Salt (Temporarily repels ghosts from an area)
+    <p align="center">
+    <img src="Images/Salt.png" width=200>
+    </p>
 
 
 ### 4.3 Physics 
 
 - Players will collide with the walls of the maze.
 - Player will accelerate up to a certain speed when they sprint. 
+- Player will decelerate to normal speed when they stop sprinting or run out of stamina. 
 - Players will collide with tombstones.
-
 
 
 ## 5. Art and Audio
