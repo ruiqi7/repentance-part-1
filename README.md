@@ -1,6 +1,6 @@
-# Game Design Document - Repentance
+# Game Design Document - _Repentance_
 
-### Table of contents
+## Table of Contents
 - [Game Overview](#1-game-overview)
 - [Story and Narrative](#2-story-and-narrative)
 - [Game Mechanics](#3-game-mechanics)
@@ -14,18 +14,25 @@
 ## 1. Game Overview
 
 ### 1.1 Concept
-Repentance is a single-player survival game. Trapped in a maze with vengeful monsters that were once victims of the player’s family, the player’s primary objective is to stay alive for 5 minutes. At the same time, the player’s role is to confront their family’s dark past and make decisions that could shape their own fate.
+_Repentance_ is a single-player survival game. Trapped in a maze with vengeful monsters that were once victims of the player’s family, the player’s primary objective is to stay alive for 5 minutes. At the same time, the player’s role is to confront their family’s dark past and make decisions that could shape their own fate.
 
 ### 1.2 Genre
-Repentance is a survival horror game. The player is challenged to survive for 5 minutes while trapped in the maze by either hiding or running from the monsters. The game sets up suspense by making use of horror game elements such as spine-chilling graphics, dark environments, unexpected attacks and eerie sound effects.
+_Repentance_ is a survival horror game. The player is challenged to survive for 5 minutes while trapped in the maze by either hiding or running from the monsters. The game sets up suspense by making use of horror game elements such as spine-chilling graphics, dark environments, unexpected attacks and eerie sound effects.
 
 <p align="center">
-    <img src="Images/Slender.png" width=300 height=150>
+    <img src="Images/Slender.png" width=300>
+</p>
+<p align="center">
+    <i>Image: Game (Slender: The Eight Pages) by Mark J. Hadley 2012</i>
 </p>
 
 [Horror Sound Effect](./Audio/horror-sound-effect.mp3)
 
+Music Referenced: *Horror SFX 3 by Pixabay 2022*
+
 [Monster Growl](./Audio/monster-growl.mp3)
+
+Music Referenced: *Deep Monster Growl by Pixabay 2022*
 
 ### 1.3 Target Audience
 Set in a maze with horror elements, the game is targeted at players who are drawn to experiencing thrill in a controlled environment. Additionally, the 5-minute time constraint on the game makes it suitable for players who prefer or can only afford to play in short bursts.
@@ -33,21 +40,24 @@ Set in a maze with horror elements, the game is targeted at players who are draw
 ### 1.4 Unique Selling Points
 
 #### 1.4.1 Compelling Storyline
-Repentance follows a storyline that progressively unfolds as the game scales in difficulty. The player’s role is not only to survive, but also to uncover the gruesome truth about their family and face the consequences of their past actions. The intertwining of survival and story progression creates an immersive experience that keeps players emotionally engaged.
+_Repentance_ follows a storyline that progressively unfolds as the game scales in difficulty. The player’s role is not only to survive, but also to uncover the gruesome truth about their family and face the consequences of their past actions. The intertwining of survival and story progression creates an immersive experience that keeps players emotionally engaged.
 
 #### 1.4.2 Appealing Aesthetic
 Inspired by the dystopian science fiction film ‘Maze Runner’ (left), the game features a pixelated maze-like environment where the walls are overgrown with foliage (right). The pixelated graphics style creates a nostalgic retro feel while the foliage, just as it conceals the features of the maze, symbolizes the hidden secrets and dangers that lurk in the player’s world.
 
 <p align="center">
-    <img src="Images/Maze_Runner.png" width=300 height=150>
-    <img src="Images/Pixelated_Maze.png" width=300 height=150>
+    <img src="Images/Maze_Runner.png" width=300>
+    <img src="Images/Pixelated_Maze.png" width=300>
+</p>
+<p align="center">
+    <i>Image: Film (Maze Runner) by Wes Ball 2014 & Image: Game (Minecraft) by Mojang Studios 2011</i>
 </p>
 
 #### 1.4.3 Unique Mechanics
-Repentance includes player stamina as a gameplay mechanic that reflects a realistic physical limitation of the player’s character and heightens the challenge of the game. Stamina allows the player to run away from the monsters and gradually replenishes when the player walks. Having to balance multiple resources adds depth to the gameplay and encourages the player to think strategically.
+_Repentance_ includes player stamina as a gameplay mechanic that reflects a realistic physical limitation of the player’s character and heightens the challenge of the game. Stamina allows the player to run away from the monsters and gradually replenishes when the player walks. Having to balance multiple resources adds depth to the gameplay and encourages the player to think strategically.
 
 <p align="center">
-    <img src="Images/Game_UI.png" width=300 height=150>
+    <img src="Images/Game_UI.png" width=300>
 </p>
 
 ## 2. Story and Narrative
@@ -59,7 +69,7 @@ Our playable character by some stroke of misfortune has found themselves in fron
 - The main character had received a letter detailed in their parents will, this was to be delivered to them upon their mother/father’s passing
 - The letter described a location containing a family heirloom 
 - The location was said to be the old location of the family home, found deep within the countryside
-- The town supposedly no longer exists, but the letter states otherwise and insists that heirloom still resides there. 
+- The town supposedly no longer exists, but the letter states otherwise and insists that heirloom still resides there
 - The player tracks the location confused as to why their parents desperately insisted that they obtain the heirloom 
 - The location can be described as desolate, however the deeper they walk into the town they face large towering walls and an entrance to what appears to be a labyrinth
 
@@ -72,17 +82,17 @@ Our playable character by some stroke of misfortune has found themselves in fron
 
 - Your family has a dark history  
 - As you go through the labyrinth you may come across information that pertains to what happened
-- The Main character's family commited crimes against another family (Murder)
-- The Heirloom is an old knife/ weapon
-- Appease the deceased (This can be set as a optional objective which you will have to read / actively search for)
+- The main character's family committed crimes against another family (murder)
+- The heirloom is an old knife / weapon
+- Appease the deceased (This can be set as a optional objective which the player will have to read / actively search for)
 
 ### 2.3 Characters
 
 - Main Character  : Brave but clueless, they understand that the heirloom is of great importance, they also hold great curiosity towards the strange location as well as towards the heirloom.
 - Monster / Enemy / Ghost / Entity : There are three monsters, these represent the victim family: Parents and Child.
-  - Parent :  Chases if the player is too close
+  - Parent : Chases if the player is too close
   - Parent : Teleports randomly
-  - Child : Hide and Seek, The player needs to hide
+  - Child : Hide and seek, the player needs to hide
 - NPC : These can be encountered in the maze, they can either help or increase the difficulty of the game.
 
 #### 2.3.1 Monster Drafting
@@ -128,20 +138,18 @@ The maze is broken into three main sections each containing different enemies. E
 Throughout the maze the player will find tombstones that belong to the enemy. The player will have the opportunity to interact with the tombstone and destroy it. Destroying a tombstone will reveal part of the game's backstory, however it will anger the ghost and make the game more difficult for the player. The player will also come across different NPCs throughout the maze. The player can interact with the NPCs in the form of a conversation with multiple options that will have different impacts on the difficulty of the game. The game may become easier or harder for the player depending on the choices they make.
 
 ### 3.4 Gameplay Mechanics
-The player is able to walk (using WASD) or sprint (using WASD + shift). The sprint capability is limited by a stamina bar that is depleted and slowly refilled. Additionally, the player is able to use the F key to equip a flashlight in areas of the maze that are dark too dark for the player to be able to see in. The player will come across different tombstones and NPCs throughout the maze that they can interact with using the E key.
+The player is able to walk (using WASD) or sprint (using WASD + shift). The sprint capability is limited by a stamina bar that is depleted and slowly refilled. Additionally, the player is able to use the F key to equip a flashlight in areas of the maze that are too dark for the player to be able to see in. The player will come across different tombstones and NPCs throughout the maze that they can interact with using the E key.
 The limitation of the sprint ability, along with the use of different light levels within the maze will make the game more challenging for the player.
-
 
 ## 4. Levels and World Design
 
 ### 4.1 Game World 
 
-The world seen by the player is a maze with an aesthetic style inspired by the Maze Runner. It is 3D and will be displayed on a single screen. Only one level will be available, however, the maze will be randomly generated and change each time the game is played. This allows the game to be replayed multiple times. The player will also be able to change the difficulty. The player starts in the centre of the maze and will have to navigate through the maze by exploring and avoiding ghosts. Hints may be available to the player if they find them in the maze, however, no map/minimap will be available as it would defeat the purpose of the maze. 
+The world seen by the player is a maze with an aesthetic style inspired by the Maze Runner. It is 3D and will be displayed on a single screen. Only one level will be available, however, the maze will be randomly generated and changed each time the game is played. This allows the game to be replayed multiple times. The player will also be able to change the difficulty. The player starts in the centre of the maze and will have to navigate through the maze by exploring and avoiding ghosts. Hints may be available to the player if they find them in the maze, however, no map/minimap will be available as it would defeat the purpose of the maze. 
 
 <p align="center">
   <img src="Images/MazeDiagram.png" width=400>
 </p>
-
 
 ### 4.2 Objects 
 
@@ -149,7 +157,7 @@ The world seen by the player is a maze with an aesthetic style inspired by the M
   <p align="center">
   <img src="Images/Tombstone.png" width=300>
   </p>
-- Heirloom. Looks like an old knife/ weapon. Can be found in the maze. 
+- Heirloom. Looks like an old knife / weapon. Can be found in the maze. 
   <p align="center">
   <img src="Images/Heirloom.png" width=300>
   </p>
@@ -157,7 +165,7 @@ The world seen by the player is a maze with an aesthetic style inspired by the M
   <p align="center">
   <img src="Images/Flashlight.png" width=200>
   </p>
-- The player can collect other items throught the maze to affect gameplay or the storyline:
+- The player can collect other items throughout the maze to affect gameplay or the storyline:
   - Eyeballs in a Jar (NPC Item)
     <p align="center">
     <img src="Images/Eyeballs.png" width=200>
@@ -183,7 +191,6 @@ The world seen by the player is a maze with an aesthetic style inspired by the M
     <img src="Images/Salt.png" width=200>
     </p>
 
-
 ### 4.3 Physics 
 
 - Players will collide with the walls of the maze.
@@ -191,21 +198,20 @@ The world seen by the player is a maze with an aesthetic style inspired by the M
 - Player will decelerate to normal speed when they stop sprinting or run out of stamina. 
 - Players will collide with tombstones.
 
-
 ## 5. Art and Audio
 
 ### 5.1 Art Style  
-- Retro Style, Playstation 1 Graphics
+- Retro style, Playstation 1 graphics
 - Use of pixelated art
 - Dark, sinister, uncomforting, horrifying
 <p align="center">
     <img src="Images/ps1_horror.jfif" width="400">
 </p>
 <p align="center">
-    <i>Image: Game (In The Mountains) by decestiadev 2021</i>
+    <i>Image: Game (In The Mountains) by DecestiaDev 2021</i>
 </p>
  
-Overall the intention is to implement lower quality graphics. As stylistically, this may allow additional details to be filled in by the player’s mind. In addition, lowering the quality may indicate some level of detachment from reality, in this case the intention is to further exacerbate the uncaniness of the situation, something that appears to be similar yet also different. Furthermore, the art style allows for the natural depiction of hard edges compared to smoothness that may commonly be associated with higher graphic quality. This reliance on hard edges in graphics may subconciously alert the player, keeping them uncomfortable and on edge.
+Overall, the intention is to implement lower quality graphics as stylistically, this may allow additional details to be filled in by the player’s mind. In addition, lowering the quality may indicate some level of detachment from reality. In this case, the intention is to further exacerbate the uncaniness of the situation, something that appears to be similar yet also different. Furthermore, the art style allows for the natural depiction of hard edges compared to smoothness that may commonly be associated with higher graphic quality. This reliance on hard edges in graphics may subconciously alert the player, keeping them uncomfortable and on edge.
 
 <p align="center">
     <img src="Images/siren_head.gif" width="400"> <img src="Images/baldis_basic.png" width="400">
@@ -216,9 +222,9 @@ Overall the intention is to implement lower quality graphics. As stylistically, 
 
 ### 5.2 Audio 
 
-- Exudes a Sombre atmosphere
-- Character Sounds : Footsteps , Flashlight, Breathing, Item interactions, Monster Sounds
-- Music: Quiet / Simple Ambience, Builds up when progressing, Monster encounter is intense, dire, alarming.
+- Exudes a sombre atmosphere
+- Character Sounds : footsteps, flashlight, breathing, item interactions, monster sounds
+- Music: quiet / simple ambience that builds up when progressing, monster encounter is intense, dire, alarming
 
 ### 5.3 Sound Design 
 
@@ -226,9 +232,9 @@ In terms of sound design, sounds should likewise feel lower in quality and granu
 
 ### 5.4 Music 
 
-The music is rather simplistic tonally, typically consisting of low tones. This may build into something more intense as the time progresses. Additionally, intense music may be included for when the monster has been encountered with the player or if the monster is engaged in pursuing the player.
+The music is rather simplistic tonally, typically consisting of low tones. This may build into something more intense as the time progresses. Additionally, intense music may be included for when the monster has encountered the player or is engaged in pursuing the player.
 
-Stylistic examples of intended Game music: 
+Stylistic examples of intended game music: 
 
 [Roaming](./Audio/atmosphere.wav) 
 
@@ -241,7 +247,7 @@ Akiyuki  Morimoto, Satoshi Hori, Miwako Chinone, Brian D'Olivera, Cris Velasco. 
 
 ### 5.5 Assets 
 
-In terms of utilising pre built assets, they will typically be sourced from the Unity Store, as a base line, this may include 3d models but edited over with custom textures in order to better suit the theme of the game. 
+In terms of utilising pre-built assets, they will typically be sourced from the Unity Store. As a baseline, this may include 3D models but edited over with custom textures in order to better suit the theme of the game. 
 
 - [Enemy/Monster](https://assetstore.unity.com/packages/3d/characters/humanoids/zombie-30232) 
 - [Enemy/Monster](https://assetstore.unity.com/packages/3d/characters/ghoul-zombie-114531) 
@@ -274,12 +280,11 @@ In terms of utilising pre built assets, they will typically be sourced from the 
 
 ## 8. Team Communication, Timelines and Task Assignment
 
-
 - Messenger and Zoom (Discussions)
 - Trello (Task Management)
 - Google Docs (Documentation and Planning)
 
-### 8.1 The project has been broken into four main parts:
+### Project Breakdown
 - World design, audio and maze generation
 - Character and camera
 - Menus, UI, cutscenes and storyline progression
