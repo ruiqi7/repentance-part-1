@@ -4,15 +4,10 @@ using UnityEngine;
 
 public abstract class InteractableInterface : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    public string interactText;
+
+    public virtual void interact() { 
+    
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
