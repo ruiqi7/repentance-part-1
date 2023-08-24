@@ -26,6 +26,7 @@ public class ZombieWalk : MonoBehaviour
         StartCoroutine(NextLoc());
     }
     private void Update() {
-        transform.position = Vector3.MoveTowards(transform.position, targetPosition, 0.002f);
+        Vector3 newPos = Vector3.MoveTowards(transform.position, targetPosition, speed);
+        transform.position = new Vector3(newPos.x, 0, newPos.z);
     }
 }

@@ -14,7 +14,8 @@ public class ChaseCamera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = Vector3.MoveTowards(transform.position, target.transform.position, 0.002f);
+        Vector3 newPos = Vector3.MoveTowards(transform.position, target.transform.position, speed);
+        transform.position = new Vector3(newPos.x, 0, newPos.z);
         transform.LookAt(target.transform.position);
     }
 }
