@@ -8,7 +8,7 @@ using UnityEngine.Rendering.PostProcessing;
 
 public class BrightnessController : MonoBehaviour
 {
-    [SerializeField] private Slider slider;
+    [SerializeField] private Slider brightnessSlider;
     [SerializeField] private PostProcessProfile brightness;
     [SerializeField] private PostProcessLayer layer;
 
@@ -17,7 +17,11 @@ public class BrightnessController : MonoBehaviour
     void Start()
     {
         brightness.TryGetSettings(out exposure);
-        AdjustBrightness(slider.value);
+        if (!PlayerPrefs.HasKey("brightness"))
+        {
+            PlayerPrefs.SetFloat("brightness", 1.5f);
+        }
+        LoadBrightness();
     }
 
     public void AdjustBrightness(float value)
@@ -28,7 +32,18 @@ public class BrightnessController : MonoBehaviour
         }
         else
         {
-            exposure.keyValue.value = 0.05f;
+            exposure.keyValue.value = 0.1f;
         }
+        SaveBrightness();
+    }
+
+    private void LoadBrightness()
+    {
+        brightnessSlider.value = PlayerPrefs.GetFloat("brightness");
+    }
+
+    private void SaveBrightness()
+    {
+        PlayerPrefs.SetFloat("brightness", brightnessSlider.value);
     }
 }
