@@ -110,12 +110,18 @@ First-person perspective where the player’s view is defined by the camera. The
     <img src="Images/first-person-game-turn.gif" width=300 height=150>
     <img src="Images/game-first-person-shooting.gif" width=300 height=150>
 </p>
+<p align="center">
+    <i>Gif: Counter-Strike 2 by Valve Corporation 2023 & Gif: Valorant by Riot Games 2020</i>
+</p>
 
 #### 3.1.1 The player's arms
 
 <p align="center">
     <img src="Images/Flashlight_Equip_Animation.gif" width=300 height=150>
     <img src="Images/player_arms.webp" width=300 height=150>
+</p>
+<p align="center">
+    <i>Gif: SCP: Secret Laboratory by Northwood Studios 2023 & Image: <a href="https://assetstore.unity.com/packages/3d/characters/fps-hands-horror-pack-249557">FPS Hands Horror Pack</a></i>
 </p>
 
 ### 3.2 Controls
@@ -131,15 +137,17 @@ First-person perspective where the player’s view is defined by the camera. The
 - E -> interact with game objects
 - shift + W/A/S/D -> sprint
 - F -> flashlight
+- Esc -> open game menu
 
 ### 3.3 Progression
 The player becomes trapped within the maze when the game begins and they must survive 5 minutes until the sun rises in order to win.
 The maze is broken into three main sections each containing different enemies. Each enemy has a different attack style and the player must avoid these enemies as one attack from any enemy will kill the player. 
-Throughout the maze the player will find tombstones that belong to the enemy. The player will have the opportunity to interact with the tombstone and destroy it. Destroying a tombstone will reveal part of the game's backstory, however it will anger the ghost and make the game more difficult for the player. The player will also come across different NPCs throughout the maze. The player can interact with the NPCs in the form of a conversation with multiple options that will have different impacts on the difficulty of the game. The game may become easier or harder for the player depending on the choices they make.
+Throughout the maze the player will find tombstones that belong to the enemy. The player will have the opportunity to interact with the tombstone, allowing them to uncover different parts of the backstory. The player will also come across different NPCs throughout the maze. The player can interact with the NPCs in the form of a conversation with multiple options that will have different impacts on the difficulty of the game. The game may become easier or harder for the player depending on the choices they make.
 
 ### 3.4 Gameplay Mechanics
 The player is able to walk (using WASD) or sprint (using WASD + shift). The sprint capability is limited by a stamina bar that is depleted and slowly refilled. Additionally, the player is able to use the F key to equip a flashlight in areas of the maze that are too dark for the player to be able to see in. The player will come across different tombstones and NPCs throughout the maze that they can interact with using the E key.
 The limitation of the sprint ability, along with the use of different light levels within the maze will make the game more challenging for the player.
+In order to make the game more engaging for multiple attempts, a different maze will be created in each run of the game.
 
 ## 4. Levels and World Design
 
@@ -257,12 +265,14 @@ In terms of utilising pre-built assets, they will typically be sourced from the 
 ## 6. User Interface
 
 ### 6.1 Start Screens
+The initial screen will allow the user to either begin the game or access the settings menu. Within the settings menu the player is able to alter screen brightness, game volume and the difficulty level. 
 <p align="center">
     <img src="Images/Main_Menu.png" width=400>
     <img src="Images/Options.png" width=400>
 </p>
 
 ### 6.2 In-Game Screens
+Whilst playing the game the player has a very limited UI. They are able to see their stamina display, represented by a blue bar, but that is all. This means majority of the players attention will be focused towards playing rather than trying to understand different displays. The player can access the in-game setitngs menu by pressing escape.
 <p align="center">
     <img src="Images/Game_UI.png" width=400>
     <img src="Images/Game_Menu.png" width=400>
