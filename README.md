@@ -294,24 +294,35 @@ Whilst playing the game the player has a very limited UI. They are able to see t
 - Trello (Task Management)
 - Google Docs (Documentation and Planning)
 
-### 8.1 Project Breakdown
+### 8.1 Project Breakdow
+The development tasks have been broken into four main areas and each assigned to a team member:
 - World design, audio and maze generation
 - Character and camera
 - Menus, UI, cutscenes and storyline progression
-- Enemies and character interactions 
+- Enemies and character interactions
 
 ### 8.2 Timeline
-- Player movement (3/09)
-- Basic maze (3/09)
-- Enemy #1 (3/09)
-- Main menu (3/09)
-- Tombstones
-- start location
+The tasks have been ordered by completion priority. The main game will be developed by the beginning of week 11, giving 3 weeks to implement user testing and further improvements to the game.
+
+3/09 - Prototype
+- Player and camera movement 
+- Basic maze
+- Enemy #1 
 - Enemy #2
 - Enemy #3
+- Main menu
+- User interface
+
+17/09 - Week 9
+- Tombstones
+- Start location
 - Maze generation
-- Difficulty selection
 - Interactable items (weapons, heirloom etc.) + inventory 
+
+1/10 - Week 11
+- Difficulty selection
+- Cut-scene for game won
+- Cut-scene for game lost
 
 ## 9. Possible Challenges
 
