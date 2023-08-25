@@ -287,6 +287,7 @@ Whilst playing the game the player has a very limited UI. They are able to see t
 - Aseprite (Pixel Art Software)
 - FMod (Audio Middleware)
 - Adobe Photoshop (Photo Editing Software)
+- Blender (3D Modeling Software)
 
 ## 8. Team Communication, Timelines and Task Assignment
 
