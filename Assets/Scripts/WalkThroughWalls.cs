@@ -15,6 +15,7 @@ public class WalkThroughWalls : MonoBehaviour
     void FixedUpdate()
     {
         if(Vector3.Distance(target.transform.position, transform.position) < 5) {
+            Debug.Log("..");
             Vector3 newPos = Vector3.MoveTowards(transform.position, target.transform.position, speed);
             transform.position = new Vector3(newPos.x, 0, newPos.z);
             transform.LookAt(new Vector3(target.transform.position.x, 0, target.transform.position.z));
