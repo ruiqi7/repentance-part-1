@@ -6,6 +6,7 @@ public class ZombieWalk : MonoBehaviour
     [SerializeField] private float minX, maxX;
     [SerializeField] private float minZ, maxZ;
     [SerializeField] private float speed;
+    [SerializeField] private GameObject target;
 
     private Vector3 targetPosition;
 
@@ -26,7 +27,10 @@ public class ZombieWalk : MonoBehaviour
         StartCoroutine(NextLoc());
     }
     private void Update() {
-        Vector3 newPos = Vector3.MoveTowards(transform.position, targetPosition, speed);
-        transform.position = new Vector3(newPos.x, 0, newPos.z);
+        if(Vector3.Distance(target.transform.position, transform.position) > 5 ) {
+            Vector3 newPos = Vector3.MoveTowards(transform.position, targetPosition, speed);
+            transform.position = new Vector3(newPos.x, 0, newPos.z);
+            transform.LookAt(targetPosition);
+        }
     }
 }
