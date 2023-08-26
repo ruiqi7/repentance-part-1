@@ -19,7 +19,7 @@ public class BrightnessController : MonoBehaviour
         brightness.TryGetSettings(out exposure);
         if (!PlayerPrefs.HasKey("brightness"))
         {
-            PlayerPrefs.SetFloat("brightness", 1.5f);
+            PlayerPrefs.SetFloat("brightness", 0.7f);
         }
         LoadBrightness();
     }
