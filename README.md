@@ -34,6 +34,15 @@ Music Referenced: *Horror SFX 3 by Pixabay 2022*
 
 Music Referenced: *Deep Monster Growl by Pixabay 2022*
 
+[Creepy Background Music](./Audio/creepy-background-music.mp3)
+
+Music Referenced: *A Piano With A Creepy Atmosphere For Scary Stories by 
+UNIVERSFIELD 2023*
+
+[Spooky Ambience](./Audio/spooky-ambience.mp3)
+
+Music Referenced: *Scary Spooky Creepy Horror Ambient Dark Piano Cinematic by SoundGalleryByDmitryTaras 2022*
+
 ### 1.3 Target Audience
 Set in a maze with horror elements, the game is targeted at players who are drawn to experiencing thrill in a controlled environment. Additionally, the 5-minute time constraint on the game makes it suitable for players who prefer or can only afford to play in short bursts.
 
@@ -64,14 +73,14 @@ _Repentance_ includes player stamina as a gameplay mechanic that reflects a real
 
 ### 2.1 Backstory
 
-Our playable character by some stroke of misfortune has found themselves in front of a strange structure. They ponder the thought, as towering walls of broken stone filled with dilapidated foliage surround them. They move deeper into the maze lost in thoughts of confusion and regret. They come upon a lone singular house in the centre.
+Our playable character by some stroke of misfortune has found themselves in front of a strange structure. They ponder the thought, as towering walls of broken stone filled with dilapidated foliage surround them. They move deeper into the maze, lost in thoughts of confusion and regret. They come upon a lone singular house in the centre.
 
 - The main character had received a letter detailed in their parents will, this was to be delivered to them upon their parent’s passing
 - The letter described a location containing a family heirloom 
 - The location was said to be the old location of the family home, found in a small town deep within the countryside
 - The town supposedly no longer exists, but the letter states otherwise and insists that the heirloom still resides there
-- The player tracks the location confused as to why their parents desperately insisted that they obtain the heirloom 
-- The location can be described as desolate, however the deeper they walk into the town they face large towering walls and an entrance to what appears to be a labyrinth
+- The player tracks the location, confused as to why their parents desperately insisted that they obtain the heirloom 
+- The location can be described as desolate, but as they walk deeper into the town, they face large towering walls and an entrance to what appears to be a labyrinth
 
 <p align="center">
     <img src="Images/gamedia2.png" width=300>
@@ -88,12 +97,12 @@ Our playable character by some stroke of misfortune has found themselves in fron
 
 ### 2.3 Characters
 
-- Main Character  : Brave but clueless, they understand that the heirloom is of great importance, they also hold great curiosity towards the strange location as well as towards the heirloom.
-- Monster : There are three monsters, these represent the victim family:
+- Main Character : Brave but clueless, they understand that the heirloom is of great importance, they also hold great curiosity towards the strange location as well as towards the heirloom.
+- Monster : There are three monsters, these represent the victim family
   - Parent : Chases if the player is too close
   - Parent : Teleports randomly
   - Child : Hide and seek, the player needs to hide
-- NPC : These can be encountered in the maze, they can either help or increase the difficulty of the game.
+- NPC : These can be encountered in the maze, they can either help the player or increase the difficulty of the game.
 
 #### 2.3.1 Monster Drafting
 <p align="center">
@@ -142,7 +151,7 @@ First-person perspective where the player’s view is defined by the camera. The
 ### 3.3 Progression
 The player becomes trapped within the maze when the game begins and they must survive 5 minutes until the sun rises in order to win.
 The maze is broken into three main sections each containing different monsters. Each monster has a different attack style and the player must avoid these monsters as one attack from any monster will kill the player. 
-Throughout the maze the player will find tombstones that belong to the monsters. The player will have the opportunity to interact with the tombstone, allowing them to uncover different parts of the backstory. The player will also come across different NPCs throughout the maze. The player can interact with the NPCs in the form of a conversation with multiple options that will have different impacts on the difficulty of the game. The game may become easier or harder for the player depending on the choices they make.
+Throughout the maze, the player will find tombstones that belong to the monsters. The player will have the opportunity to interact with the tombstone, allowing them to uncover different parts of the backstory. The player will also come across different NPCs throughout the maze. The player can interact with the NPCs in the form of a conversation with multiple options that will have different impacts on the difficulty of the game. The game may become easier or harder for the player depending on the choices they make.
 
 ### 3.4 Gameplay Mechanics
 The player is able to walk (using WASD) or sprint (using WASD + shift). The sprint capability is limited by a stamina bar that is depleted and slowly refilled. Additionally, the player is able to use the F key to equip a flashlight in areas of the maze that are too dark for the player to be able to see in. The player will come across different tombstones and NPCs throughout the maze that they can interact with using the E key.
@@ -153,7 +162,7 @@ In order to make the game more engaging for multiple attempts, a different maze 
 
 ### 4.1 Game World 
 
-The world seen by the player is a maze with an aesthetic style inspired by the Maze Runner. It is 3D and will be displayed on a single screen. Only one level will be available, however, the maze will be randomly generated and changed each time the game is played. This allows the game to be replayed multiple times. The player will also be able to change the difficulty. The player starts in the centre of the maze and will have to navigate through the maze by exploring and avoiding monsters. Hints may be available to the player if they find them in the maze, however, no map/minimap will be available as it would defeat the purpose of the maze. 
+The world seen by the player is a maze with an aesthetic style inspired by the Maze Runner. It is 3D and will be displayed on a single screen. Only one level will be available, but the maze will be randomly generated and changed each time the game is played. This allows the game to be replayed multiple times. The player will also be able to change the difficulty. The player starts in the centre of the maze and will have to navigate through the maze by exploring and avoiding monsters. Hints may be available to the player if they find them in the maze. However, no map/minimap will be available as it would defeat the purpose of the maze. 
 
 <p align="center">
   <img src="Images/MazeDiagram.png" width=400>
@@ -232,11 +241,11 @@ Overall, the intention is to implement lower quality graphics as stylistically, 
 
 - Exudes a sombre atmosphere
 - Character Sounds : footsteps, flashlight, breathing, item interactions, monster sounds
-- Music: quiet / simple ambience that builds up when progressing, monster encounter is intense, dire, alarming
+- Music: quiet / simple ambience that builds up progressively, monster encounter is intense, dire, alarming
 
 ### 5.3 Sound Design 
 
-In terms of sound design, sounds should likewise feel lower in quality and granular texture. This is in order to complement the visual aspect of the game thematically. Sounds feel as if they’re passing through a radio. Sounds in the game such as footsteps, doors and breathing shouldn’t feel pleasant to the ear, but should feel deliberate and noticeable. The player's actions in the game will take up valuable time and the sounds in the game should reflect these actions.
+In terms of sound design, sounds will likewise feel lower in quality and granular texture. This is to complement the visual aspect of the game thematically. The sounds will feel as if they’re passing through a radio. Sounds in the game such as footsteps, doors and breathing shouldn’t feel pleasant to the ear, but should feel deliberate and noticeable. The player's actions in the game will take up valuable time and the sounds in the game should reflect these actions.
 
 ### 5.4 Music 
 
@@ -272,7 +281,7 @@ The initial screen will allow the user to either begin the game or access the se
 </p>
 
 ### 6.2 In-Game Screens
-Whilst playing the game the player has a very limited UI. They are able to see their stamina display, represented by a blue bar, but that is all. This means majority of the players attention will be focused towards playing rather than trying to understand different displays. The player can access the in-game setitngs menu by pressing escape.
+Whilst playing the game the player has a very limited UI. They are able to see their stamina display, represented by a blue bar, but that is all. This means majority of the players attention will be focused towards playing rather than trying to understand different displays. The player can access the in-game settings menu by pressing escape.
 <p align="center">
     <img src="Images/Game_UI.png" width=400>
     <img src="Images/Game_Menu.png" width=400>
@@ -291,18 +300,19 @@ Whilst playing the game the player has a very limited UI. They are able to see t
 
 ## 8. Team Communication, Timelines and Task Assignment
 
+### 8.1 Communication Platforms
 - Messenger and Zoom (Discussions)
 - Trello (Task Management)
 - Google Docs (Documentation and Planning)
 
-### 8.1 Project Breakdow
-The development tasks have been broken into four main areas and each assigned to a team member:
+### 8.2 Project Breakdown
+The development tasks have been broken into four main areas with each assigned to a team member:
 - World design, audio and maze generation
 - Character and camera
 - Menus, UI, cutscenes and storyline progression
 - Enemies and character interactions
 
-### 8.2 Timeline
+### 8.3 Timeline
 The tasks have been ordered by completion priority. The main game will be developed by the beginning of week 11, giving 3 weeks to implement user testing and further improvements to the game.
 
 3/09 - Prototype
