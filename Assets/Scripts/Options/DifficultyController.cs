@@ -9,18 +9,29 @@ public class DifficultyController : MonoBehaviour
 
     void Start()
     {
-        color = GetComponent<Image>().color;
-        color.a = 0.5f;
-        GetComponent<Image>().color = color;
+        if (!PlayerPrefs.HasKey("difficulty"))
+        {
+            PlayerPrefs.SetInt("difficulty", 0);
+        }
+        LoadDifficulty();
     }
 
     public void AdjustDifficulty()
     {
-        foreach (Transform sibling in transform.parent)
+        int index = transform.GetSiblingIndex();
+        SaveDifficulty(index);
+        LoadDifficulty();
+    }
+
+    private void LoadDifficulty()
+    {
+        int difficulty = PlayerPrefs.GetInt("difficulty");
+        for (int i = 0; i < transform.parent.childCount; i++)
         {
+            Transform sibling = transform.parent.GetChild(i);
             Image siblingImage = sibling.gameObject.GetComponent<Image>();
             Color siblingColor = siblingImage.color;
-            if (sibling.position.x <= transform.position.x)
+            if (i <= difficulty)
             {
                 siblingColor.a = 1.0f;
             }
@@ -30,5 +41,10 @@ public class DifficultyController : MonoBehaviour
             }
             siblingImage.color = siblingColor;
         }
+    }
+
+    private void SaveDifficulty(int difficulty)
+    {
+        PlayerPrefs.SetInt("difficulty", difficulty);
     }
 }
