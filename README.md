@@ -40,7 +40,7 @@ Set in a maze with horror elements, the game is targeted at players who are draw
 ### 1.4 Unique Selling Points
 
 #### 1.4.1 Compelling Storyline
-_Repentance_ follows a storyline that progressively unfolds as the game scales in difficulty. The player’s role is not only to survive, but also to uncover the gruesome truth about their family and face the consequences of their past actions. The intertwining of survival and story progression creates an immersive experience that keeps players emotionally engaged.
+_Repentance_ follows a storyline that progressively unfolds as the player explores the maze. The player’s role is not only to survive, but also to uncover the gruesome truth about their family and face the consequences of their past actions. The intertwining of survival and story progression creates an immersive experience that keeps players emotionally engaged.
 
 #### 1.4.2 Appealing Aesthetic
 Inspired by the dystopian science fiction film ‘Maze Runner’ (left), the game features a pixelated maze-like environment where the walls are overgrown with foliage (right). The pixelated graphics style creates a nostalgic retro feel while the foliage, just as it conceals the features of the maze, symbolizes the hidden secrets and dangers that lurk in the player’s world.
@@ -68,8 +68,8 @@ Our playable character by some stroke of misfortune has found themselves in fron
 
 - The main character had received a letter detailed in their parents will, this was to be delivered to them upon their parent’s passing
 - The letter described a location containing a family heirloom 
-- The location was said to be the old location of the family home, found deep within the countryside
-- The town supposedly no longer exists, but the letter states otherwise and insists that heirloom still resides there
+- The location was said to be the old location of the family home, found in a small town deep within the countryside
+- The town supposedly no longer exists, but the letter states otherwise and insists that the heirloom still resides there
 - The player tracks the location confused as to why their parents desperately insisted that they obtain the heirloom 
 - The location can be described as desolate, however the deeper they walk into the town they face large towering walls and an entrance to what appears to be a labyrinth
 
