@@ -178,7 +178,7 @@ The world seen by the player is a maze with an aesthetic style inspired by the M
     <p align="center">
     <img src="Images/Eyeballs.png" width=200>
     </p>
-  - Broken Doll (Distracts the ghost child)
+  - Broken Doll (Distracts the monster child)
     <p align="center">
     <img src="Images/Doll.png" width=200>
     </p>
