@@ -165,7 +165,7 @@ The world seen by the player is a maze with an aesthetic style inspired by the M
   <p align="center">
   <img src="Images/Tombstone.png" width=300>
   </p>
-- Heirloom. Looks like an old knife. Can be found in the maze. 
+- Heirloom. Looks like an old knife. Starts in the player's inventory. Used for lore purposes.
   <p align="center">
   <img src="Images/Heirloom.png" width=300>
   </p>
