@@ -73,15 +73,15 @@ _Repentance_ includes player stamina as a gameplay mechanic that reflects a real
 
 ### 2.1 Backstory
 
-The story starts with the player receiving the will of their estranged father, it details only one request. That the player retrieve the family heirloom located at the old family home located deep within the countryside.
+The story starts with the player receiving the will of their estranged parents, it details only one request. That the player retrieve the family heirloom located at the old family home located deep within the countryside.
 
-- The main character had received a letter detailed in their parents will, this was to be delivered to them upon their parent’s passing
+- The main character had received a letter detailed in their parent's will, this was to be delivered to them upon their parent’s passing
 - The letter described a location containing a family heirloom 
 - The location was said to be the old location of the family home, found deep within the countryside
-- The player tracks the location but they are puzzled by their father's request to retrieve the heirloom. 
+- The player tracks the location but they are confused by the request to retrieve the heirloom. 
 - The location can be described as isolated, the house located amongst rolling hills and foilage
 - The house can be described as a country log cabin, abandoned and worn down.
-
+- Nothing appears to indicate much danger upon arriving at the location.
 
 
 <p align="center">
@@ -99,11 +99,19 @@ The story starts with the player receiving the will of their estranged father, i
 
 ### 2.3 Story and Game Progression
 
-Standard story implementation into the game through use of cut scenes and dialogue poses challenges given the time constraint of 5 minutes. Therefore, implementation through gameplay elements, art and implicit meaning via objecs will be utilised.
+Standard story implementation into the game through use of cut scenes and dialogue poses challenges given the constraints of short gameplay time. Therefore, alternate implementation of story through gameplay elements, art and implicit meaning via objecs will be utilised.
 
+- The monsters in the game are the victims of the player's family.
 - Graves and Tombs found as an asset in the game refer to the graves of the victim family. They can be found behind the main house at the start of the game or within the maze when the game starts.
 - The NPCs found in the maze can refer to family members who were involved in the incident involving the victims.
+  - NPC's that were directly involved will be further anger the monsters.
+  - NPC's that were indirectly involved will feel remorseful and will aide the player. 
 - Items found in the maze can refer to how the victims were killed or assist in appeasing the victims.
+  - Eyeballs in a jar would suggest that the victims eyes were gouged.
+  - The heirloom is a hunting knife which would suggest a rural / community driven environment.
+  - Using the broken doll for the child monster will delay them from chasing the player.
+  - Using the wilted flower on the tombstones is a sign of remorse towards the victims.
+- As the player encounters different objects and NPCs, they may be able to piece together what happened in the past.
 
 ### 2.4 Characters
 
@@ -238,7 +246,7 @@ The world seen by the player is a maze with an aesthetic style inspired by the M
     <i>Image: Game (In The Mountains) by DecestiaDev 2021</i>
 </p>
  
-Overall, the intention is to implement a lower quality graphics setting as a stylistic choice that can be comparable to PSX Graphics. The idea is that this may allow additional details to be filled in by the player’s mind. In addition, lowering the quality may indicate some level of detachment from reality. In this case, it further exacerbates the uncaniness of the situation, something that appears to be similar yet also different. Furthermore, the art style allows for the natural depiction of hard edges compared to smoothness that may commonly be associated with higher graphic quality. This reliance on hard edges in graphics may subconciously alert the player, keeping them uncomfortable and on edge.
+Overall, the intention is to implement a lower quality graphics setting as a stylistic choice that can be comparable to PSX Graphics. The idea is that this may allow missing details to be filled in by the player’s mind. In addition, lowering the quality may indicate some level of detachment from reality. However, it also further exacerbates the uncaniness of the scene, it can be described as something that appears familiar yet also different. Furthermore, the art style allows for the natural depiction of hard edges compared to smoothness that may commonly be associated with higher graphic quality. This reliance on hard edges in graphics may subconciously alert the player, keeping them uncomfortable and on edge.
 
 <p align="center">
     <img src="Images/siren_head.gif" width="400"> <img src="Images/baldis_basic.png" width="400">
