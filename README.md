@@ -75,31 +75,25 @@ _Repentance_ includes player stamina as a gameplay mechanic that reflects a real
 
 The story starts with the player receiving the will of their estranged parents, it details only one request. That the player retrieve the family heirloom located at the old family home located deep within the countryside.
 
-- The main character had received a letter detailed in their parent's will, this was to be delivered to them upon their parent’s passing
-- The letter described a location containing a family heirloom 
+- The main character had received a letter detailed in their parent's will, this was to be delivered to them upon their parent’s passing.
+- The letter described a location containing a family heirloom. 
 - The location was said to be the old location of the family home, found deep within the countryside
 - The player tracks the location but they are confused by the request to retrieve the heirloom. 
-- The location can be described as isolated, the house located amongst rolling hills and foilage
+- The location can be described as isolated, the house located amongst rolling hills and foilage.
 - The house can be described as a country log cabin, abandoned and worn down.
 - Nothing appears to indicate much danger upon arriving at the location.
-
+- Your family has a dark history.  
+- The main character's family committed crimes against another family (murder).
+- The heirloom is an old knife.
 
 <p align="center">
     <img src="Images/gamedia2.png" width=300>
     <img src="Images/gamedia1.png" width=300>
 </p>
 
-### 2.2 Additional Information / Story
+### 2.2 Story and Game Progression
 
-- Your family has a dark history  
-- As you go through the labyrinth you may come across information that pertains to what happened
-- The main character's family committed crimes against another family (murder)
-- The heirloom is an old knife
-- Appease the deceased (this is an optional objective which the player will have to actively search for)
-
-### 2.3 Story and Game Progression
-
-Standard story implementation into the game through use of cut scenes and dialogue poses challenges given the constraints of short gameplay time. Therefore, alternate implementation of story through gameplay elements, art and implicit meaning via objecs will be utilised.
+Standard story implementation into the game through use of cut scenes and dialogue poses challenges given the constraints of short gameplay time. Therefore, alternate implementation of story through gameplay elements, art and implicit meaning via objects will be utilised.
 
 - The monsters in the game are the victims of the player's family.
 - Graves and Tombs found as an asset in the game refer to the graves of the victim family. They can be found behind the main house at the start of the game or within the maze when the game starts.
@@ -113,7 +107,7 @@ Standard story implementation into the game through use of cut scenes and dialog
   - Using the wilted flower on the tombstones is a sign of remorse towards the victims.
 - As the player encounters different objects and NPCs, they may be able to piece together what happened in the past.
 
-### 2.4 Characters
+### 2.3 Characters
 
 - Main Character : Brave but clueless, they understand that the heirloom is of great importance, they also hold great curiosity towards the strange location as well as towards the heirloom.
 - Monster : There are three monsters, these represent the victim family
@@ -122,7 +116,7 @@ Standard story implementation into the game through use of cut scenes and dialog
   - Child : Hide and seek, the player needs to hide
 - NPC : These can be encountered in the maze, they can either help the player or increase the difficulty of the game.
 
-#### 2.4.1 Monster Drafting
+#### 2.3.1 Monster Drafting
 <p align="center">
     <img src="Images/monster_draft_1.png" width=400>
     <img src="Images/monster_draft_2.png" width=400>
