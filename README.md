@@ -64,14 +64,16 @@ _Repentance_ includes player stamina as a gameplay mechanic that reflects a real
 
 ### 2.1 Backstory
 
-Our playable character by some stroke of misfortune has found themselves in front of a strange structure. They ponder the thought, as towering walls of broken stone filled with dilapidated foliage surround them. They move deeper into the maze lost in thoughts of confusion and regret. They come upon a lone singular house in the centre.
+The story starts with the player receiving the will of their estranged father, it details only one request. That the player retrieve the family heirloom located at the old family home located deep within the countryside.
 
 - The main character had received a letter detailed in their parents will, this was to be delivered to them upon their parent’s passing
 - The letter described a location containing a family heirloom 
-- The location was said to be the old location of the family home, found in a small town deep within the countryside
-- The town supposedly no longer exists, but the letter states otherwise and insists that the heirloom still resides there
-- The player tracks the location confused as to why their parents desperately insisted that they obtain the heirloom 
-- The location can be described as desolate, however the deeper they walk into the town they face large towering walls and an entrance to what appears to be a labyrinth
+- The location was said to be the old location of the family home, found deep within the countryside
+- The player tracks the location but they are puzzled by their father's request to retrieve the heirloom. 
+- The location can be described as isolated, the house located amongst rolling hills and foilage
+- The house can be described as a country log cabin, abandoned and worn down.
+
+
 
 <p align="center">
     <img src="Images/gamedia2.png" width=300>
@@ -86,7 +88,15 @@ Our playable character by some stroke of misfortune has found themselves in fron
 - The heirloom is an old knife
 - Appease the deceased (this is an optional objective which the player will have to actively search for)
 
-### 2.3 Characters
+### 2.3 Story and Game Progression
+
+Standard story implementation into the game through use of cut scenes and dialogue poses challenges given the time constraint of 5 minutes. Therefore, implementation through gameplay elements, art and implicit meaning via objecs will be utilised.
+
+- Graves and Tombs found as an asset in the game refer to the graves of the victim family. They can be found behind the main house at the start of the game or within the maze when the game starts.
+- The NPCs found in the maze can refer to family members who were involved in the incident involving the victims.
+- Items found in the maze can refer to how the victims were killed or assist in appeasing the victims.
+
+### 2.4 Characters
 
 - Main Character  : Brave but clueless, they understand that the heirloom is of great importance, they also hold great curiosity towards the strange location as well as towards the heirloom.
 - Monster : There are three monsters, these represent the victim family:
@@ -95,7 +105,7 @@ Our playable character by some stroke of misfortune has found themselves in fron
   - Child : Hide and seek, the player needs to hide
 - NPC : These can be encountered in the maze, they can either help or increase the difficulty of the game.
 
-#### 2.3.1 Monster Drafting
+#### 2.4.1 Monster Drafting
 <p align="center">
     <img src="Images/monster_draft_1.png" width=400>
     <img src="Images/monster_draft_2.png" width=400>
@@ -209,9 +219,9 @@ The world seen by the player is a maze with an aesthetic style inspired by the M
 ## 5. Art and Audio
 
 ### 5.1 Art Style  
-- Retro style, Playstation 1 graphics
-- Use of pixelated art
-- Dark, sinister, uncomforting, horrifying
+- Retro style, PSX Graphics
+- Use of pixelated art, Low Poly Models
+- Dark, sinister, uncomforting, uncanny
 <p align="center">
     <img src="Images/ps1_horror.jfif" width="400">
 </p>
@@ -219,7 +229,7 @@ The world seen by the player is a maze with an aesthetic style inspired by the M
     <i>Image: Game (In The Mountains) by DecestiaDev 2021</i>
 </p>
  
-Overall, the intention is to implement lower quality graphics as stylistically, this may allow additional details to be filled in by the player’s mind. In addition, lowering the quality may indicate some level of detachment from reality. In this case, the intention is to further exacerbate the uncaniness of the situation, something that appears to be similar yet also different. Furthermore, the art style allows for the natural depiction of hard edges compared to smoothness that may commonly be associated with higher graphic quality. This reliance on hard edges in graphics may subconciously alert the player, keeping them uncomfortable and on edge.
+Overall, the intention is to implement a lower quality graphics setting as a stylistic choice that can be comparable to PSX Graphics. The idea is that this may allow additional details to be filled in by the player’s mind. In addition, lowering the quality may indicate some level of detachment from reality. In this case, it further exacerbates the uncaniness of the situation, something that appears to be similar yet also different. Furthermore, the art style allows for the natural depiction of hard edges compared to smoothness that may commonly be associated with higher graphic quality. This reliance on hard edges in graphics may subconciously alert the player, keeping them uncomfortable and on edge.
 
 <p align="center">
     <img src="Images/siren_head.gif" width="400"> <img src="Images/baldis_basic.png" width="400">
@@ -319,6 +329,7 @@ The tasks have been ordered by completion priority. The main game will be develo
 - Start location
 - Maze generation
 - Interactable items (weapons, heirloom etc.) + inventory 
+- Graphics Asset Creation + Implementation
 
 1/10 - Week 11
 - Difficulty selection
