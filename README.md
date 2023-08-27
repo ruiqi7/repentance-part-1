@@ -98,7 +98,7 @@ Standard story implementation into the game through use of cut scenes and dialog
 - The monsters in the game are the victims of the player's family.
 - Graves and Tombs found as an asset in the game refer to the graves of the victim family. They can be found behind the main house at the start of the game or within the maze when the game starts.
 - The NPCs found in the maze can refer to family members who were involved in the incident involving the victims.
-  - NPC's that were directly involved will be further anger the monsters.
+  - NPC's that were directly involved will further anger the monsters.
   - NPC's that were indirectly involved will feel remorseful and will aide the player. 
 - Items found in the maze can refer to how the victims were killed or assist in appeasing the victims.
   - Eyeballs in a jar would suggest that the victims eyes were gouged.
@@ -116,10 +116,18 @@ Standard story implementation into the game through use of cut scenes and dialog
   - Child : Hide and seek, the player needs to hide
 - NPC : These can be encountered in the maze, they can either help the player or increase the difficulty of the game.
 
-#### 2.3.1 Monster Drafting
+
+#### 2.3.1 NPC Drafting
+
+This particular NPC is mute, and has no eyes, but will return an item when given the Jar of Eyeballs
 <p align="center">
-    <img src="Images/monster_draft_1.png" width=400>
-    <img src="Images/monster_draft_2.png" width=400>
+    <img src="Images/npc_draft.png" width=400>
+</p>
+
+#### 2.3.2 Monster Drafting
+<p align="center">
+    <img src="Images/monster_draft_1.png" width=400 height=350>
+    <img src="Images/monster_draft_2.png" width=400 height=350>
 </p>
 
 ## 3. Game Mechanics
