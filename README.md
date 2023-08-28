@@ -1,6 +1,6 @@
-# Game Design Document - Repentance
+# Game Design Document - _Repentance_
 
-### Table of contents
+## Table of Contents
 - [Game Overview](#1-game-overview)
 - [Story and Narrative](#2-story-and-narrative)
 - [Game Mechanics](#3-game-mechanics)
@@ -14,18 +14,25 @@
 ## 1. Game Overview
 
 ### 1.1 Concept
-Repentance is a single-player survival game. Trapped in a maze with vengeful monsters that were once victims of the player’s family, the player’s primary objective is to stay alive for 5 minutes. At the same time, the player’s role is to confront their family’s dark past and make decisions that could shape their own fate.
+_Repentance_ is a single-player survival game. Trapped in a maze with vengeful monsters that were once victims of the player’s family, the player’s primary objective is to stay alive for 5 minutes. At the same time, the player’s role is to confront their family’s dark past and make decisions that could shape their own fate.
 
 ### 1.2 Genre
-Repentance is a survival horror game. The player is challenged to survive for 5 minutes while trapped in the maze by either hiding or running from the monsters. The game sets up suspense by making use of horror game elements such as spine-chilling graphics, dark environments, unexpected attacks and eerie sound effects.
+_Repentance_ is a survival horror game. The player is challenged to survive for 5 minutes while trapped in the maze by either hiding or running from the monsters. The game sets up suspense by making use of horror game elements such as spine-chilling graphics, dark environments, unexpected attacks and eerie sound effects.
 
 <p align="center">
-    <img src="Images/Slender.png" width=300 height=150>
+    <img src="Images/Slender.png" width=300>
+</p>
+<p align="center">
+    <i>Image: Game (Slender: The Eight Pages) by Mark J. Hadley 2012</i>
 </p>
 
 [Horror Sound Effect](./Audio/horror-sound-effect.mp3)
 
+Music Referenced: *Horror SFX 3 by Pixabay 2022*
+
 [Monster Growl](./Audio/monster-growl.mp3)
+
+Music Referenced: *Deep Monster Growl by Pixabay 2022*
 
 ### 1.3 Target Audience
 Set in a maze with horror elements, the game is targeted at players who are drawn to experiencing thrill in a controlled environment. Additionally, the 5-minute time constraint on the game makes it suitable for players who prefer or can only afford to play in short bursts.
@@ -33,21 +40,24 @@ Set in a maze with horror elements, the game is targeted at players who are draw
 ### 1.4 Unique Selling Points
 
 #### 1.4.1 Compelling Storyline
-Repentance follows a storyline that progressively unfolds as the game scales in difficulty. The player’s role is not only to survive, but also to uncover the gruesome truth about their family and face the consequences of their past actions. The intertwining of survival and story progression creates an immersive experience that keeps players emotionally engaged.
+_Repentance_ follows a storyline that progressively unfolds as the game scales in difficulty. The player’s role is not only to survive, but also to uncover the gruesome truth about their family and face the consequences of their past actions. The intertwining of survival and story progression creates an immersive experience that keeps players emotionally engaged.
 
 #### 1.4.2 Appealing Aesthetic
 Inspired by the dystopian science fiction film ‘Maze Runner’ (left), the game features a pixelated maze-like environment where the walls are overgrown with foliage (right). The pixelated graphics style creates a nostalgic retro feel while the foliage, just as it conceals the features of the maze, symbolizes the hidden secrets and dangers that lurk in the player’s world.
 
 <p align="center">
-    <img src="Images/Maze_Runner.png" width=300 height=150>
-    <img src="Images/Pixelated_Maze.png" width=300 height=150>
+    <img src="Images/Maze_Runner.png" width=300>
+    <img src="Images/Pixelated_Maze.png" width=300>
+</p>
+<p align="center">
+    <i>Image: Film (Maze Runner) by Wes Ball 2014 & Image: Game (Minecraft) by Mojang Studios 2011</i>
 </p>
 
 #### 1.4.3 Unique Mechanics
-Repentance includes player stamina as a gameplay mechanic that reflects a realistic physical limitation of the player’s character and heightens the challenge of the game. Stamina allows the player to run away from the monsters and gradually replenishes when the player walks. Having to balance multiple resources adds depth to the gameplay and encourages the player to think strategically.
+_Repentance_ includes player stamina as a gameplay mechanic that reflects a realistic physical limitation of the player’s character and heightens the challenge of the game. Stamina allows the player to run away from the monsters and gradually replenishes when the player walks. Having to balance multiple resources adds depth to the gameplay and encourages the player to think strategically.
 
 <p align="center">
-    <img src="Images/Game_UI.png" width=300 height=150>
+    <img src="Images/Game_UI.png" width=300>
 </p>
 
 ## 2. Story and Narrative
@@ -59,7 +69,7 @@ Our playable character by some stroke of misfortune has found themselves in fron
 - The main character had received a letter detailed in their parents will, this was to be delivered to them upon their mother/father’s passing
 - The letter described a location containing a family heirloom 
 - The location was said to be the old location of the family home, found deep within the countryside
-- The town supposedly no longer exists, but the letter states otherwise and insists that heirloom still resides there. 
+- The town supposedly no longer exists, but the letter states otherwise and insists that heirloom still resides there
 - The player tracks the location confused as to why their parents desperately insisted that they obtain the heirloom 
 - The location can be described as desolate, however the deeper they walk into the town they face large towering walls and an entrance to what appears to be a labyrinth
 
@@ -72,17 +82,17 @@ Our playable character by some stroke of misfortune has found themselves in fron
 
 - Your family has a dark history  
 - As you go through the labyrinth you may come across information that pertains to what happened
-- The Main character's family commited crimes against another family (Murder)
-- The Heirloom is an old knife/ weapon
-- Appease the deceased (This can be set as a optional objective which you will have to read / actively search for)
+- The main character's family committed crimes against another family (murder)
+- The heirloom is an old knife / weapon
+- Appease the deceased (This can be set as a optional objective which the player will have to read / actively search for)
 
 ### 2.3 Characters
 
 - Main Character  : Brave but clueless, they understand that the heirloom is of great importance, they also hold great curiosity towards the strange location as well as towards the heirloom.
 - Monster / Enemy / Ghost / Entity : There are three monsters, these represent the victim family: Parents and Child.
-  - Parent :  Chases if the player is too close
+  - Parent : Chases if the player is too close
   - Parent : Teleports randomly
-  - Child : Hide and Seek, The player needs to hide
+  - Child : Hide and seek, the player needs to hide
 - NPC : These can be encountered in the maze, they can either help or increase the difficulty of the game.
 
 #### 2.3.1 Monster Drafting
@@ -100,12 +110,18 @@ First-person perspective where the player’s view is defined by the camera. The
     <img src="Images/first-person-game-turn.gif" width=300 height=150>
     <img src="Images/game-first-person-shooting.gif" width=300 height=150>
 </p>
+<p align="center">
+    <i>Gif: Counter-Strike 2 by Valve Corporation 2023 & Gif: Valorant by Riot Games 2020</i>
+</p>
 
 #### 3.1.1 The player's arms
 
 <p align="center">
     <img src="Images/Flashlight_Equip_Animation.gif" width=300 height=150>
     <img src="Images/player_arms.webp" width=300 height=150>
+</p>
+<p align="center">
+    <i>Gif: SCP: Secret Laboratory by Northwood Studios 2023 & Image: <a href="https://assetstore.unity.com/packages/3d/characters/fps-hands-horror-pack-249557">FPS Hands Horror Pack</a></i>
 </p>
 
 ### 3.2 Controls
@@ -121,69 +137,102 @@ First-person perspective where the player’s view is defined by the camera. The
 - E -> interact with game objects
 - shift + W/A/S/D -> sprint
 - F -> flashlight
+- Esc -> open game menu
 
 ### 3.3 Progression
 The player becomes trapped within the maze when the game begins and they must survive 5 minutes until the sun rises in order to win.
 The maze is broken into three main sections each containing different enemies. Each enemy has a different attack style and the player must avoid these enemies as one attack from any enemy will kill the player. 
-Throughout the maze the player will find tombstones that belong to the enemy. The player will have the opportunity to interact with the tombstone and destroy it. Destroying a tombstone will reveal part of the game's backstory, however it will anger the ghost and make the game more difficult for the player. The player will also come across different NPCs throughout the maze. The player can interact with the NPCs in the form of a conversation with multiple options that will have different impacts on the difficulty of the game. The game may become easier or harder for the player depending on the choices they make.
+Throughout the maze the player will find tombstones that belong to the enemy. The player will have the opportunity to interact with the tombstone, allowing them to uncover different parts of the backstory. The player will also come across different NPCs throughout the maze. The player can interact with the NPCs in the form of a conversation with multiple options that will have different impacts on the difficulty of the game. The game may become easier or harder for the player depending on the choices they make.
 
 ### 3.4 Gameplay Mechanics
-The player is able to walk (using WASD) or sprint (using WASD + shift). The sprint capability is limited by a stamina bar that is depleted and slowly refilled. Additionally, the player is able to use the F key to equip a flashlight in areas of the maze that are dark too dark for the player to be able to see in. The player will come across different tombstones and NPCs throughout the maze that they can interact with using the E key.
+The player is able to walk (using WASD) or sprint (using WASD + shift). The sprint capability is limited by a stamina bar that is depleted and slowly refilled. Additionally, the player is able to use the F key to equip a flashlight in areas of the maze that are too dark for the player to be able to see in. The player will come across different tombstones and NPCs throughout the maze that they can interact with using the E key.
 The limitation of the sprint ability, along with the use of different light levels within the maze will make the game more challenging for the player.
-
+In order to make the game more engaging for multiple attempts, a different maze will be created in each run of the game.
 
 ## 4. Levels and World Design
 
 ### 4.1 Game World 
 
-The world seen by the player is a maze with an aesthetic style inspired by the Maze Runner. It is 3D and will be displayed on a single screen. Only one level will be available, however, the maze will be randomly generated and change each time the game is played. This allows the game to be replayed multiple times. The player starts in the centre of the maze and will have to navigate through the maze by exploring and avoiding ghosts. Hints may be available to the player if they find them in the maze, however, no map/minimap will be available as it would defeat the purpose of the maze. 
+The world seen by the player is a maze with an aesthetic style inspired by the Maze Runner. It is 3D and will be displayed on a single screen. Only one level will be available, however, the maze will be randomly generated and changed each time the game is played. This allows the game to be replayed multiple times. The player will also be able to change the difficulty. The player starts in the centre of the maze and will have to navigate through the maze by exploring and avoiding ghosts. Hints may be available to the player if they find them in the maze, however, no map/minimap will be available as it would defeat the purpose of the maze. 
 
 <p align="center">
   <img src="Images/MazeDiagram.png" width=400>
 </p>
 
-
 ### 4.2 Objects 
 
-- Tombstones. Players can destroy tombstones or interact with them in some way to unlock lore. 
-- Heirloom. Looks like an old knife/ weapon. 
+- Tombstones. Player can destroy tombstones or interact with them in some way to unlock lore. 
+  <p align="center">
+  <img src="Images/Tombstone.png" width=300>
+  </p>
+- Heirloom. Looks like an old knife / weapon. Can be found in the maze. 
+  <p align="center">
+  <img src="Images/Heirloom.png" width=300>
+  </p>
 - Flashlight. Starts in the player’s inventory. Player can turn it on or off.
-- The player can collect other items such as weapons to slow down the monsters and prevent them from chasing the player.
-
-<p align="center">
-  <img src="Images/PlayerHoldingWeapon.gif" width=300 height=150>
-</p>
-
+  <p align="center">
+  <img src="Images/Flashlight.png" width=200>
+  </p>
+- The player can collect other items throughout the maze to affect gameplay or the storyline:
+  - Eyeballs in a Jar (NPC Item)
+    <p align="center">
+    <img src="Images/Eyeballs.png" width=200>
+    </p>
+  - Broken Doll (Distracts the ghost child)
+    <p align="center">
+    <img src="Images/Doll.png" width=200>
+    </p>
+  - Candle (Can be placed on the graves)
+    <p align="center">
+    <img src="Images/Candle.png" width=200>
+    </p>
+  - Withered Flower (Can be placed on the graves)
+    <p align="center">
+    <img src="Images/Flower.png" width=200>
+    </p>
+  - Torn Letter (Reveals lore)
+    <p align="center">
+    <img src="Images/Letter.png" width=200>
+    </p>
+  - Salt (Temporarily repels ghosts from an area)
+    <p align="center">
+    <img src="Images/Salt.png" width=200>
+    </p>
 
 ### 4.3 Physics 
 
 - Players will collide with the walls of the maze.
 - Player will accelerate up to a certain speed when they sprint. 
+- Player will decelerate to normal speed when they stop sprinting or run out of stamina. 
 - Players will collide with tombstones.
-
-
 
 ## 5. Art and Audio
 
 ### 5.1 Art Style  
-- Retro Style, Playstation 1 Graphics
+- Retro style, Playstation 1 graphics
 - Use of pixelated art
 - Dark, sinister, uncomforting, horrifying
 <p align="center">
     <img src="Images/ps1_horror.jfif" width="400">
 </p>
-
-Overall the intention is to implement lower quality graphics. As stylistically, this may allow additional details to be filled in by the player’s mind. In addition, lowering the quality may indicate some level of detachment from reality, in this case the intention is to further exacerbate the uncaniness of the situation, something that appears to be similar yet also different. Furthermore, the art style allows for the natural depiction of hard edges compared to smoothness that may commonly be associated with higher graphic quality. This reliance on hard edges in graphics may subconciously alert the player, keeping them uncomfortable and on edge.
+<p align="center">
+    <i>Image: Game (In The Mountains) by DecestiaDev 2021</i>
+</p>
+ 
+Overall, the intention is to implement lower quality graphics as stylistically, this may allow additional details to be filled in by the player’s mind. In addition, lowering the quality may indicate some level of detachment from reality. In this case, the intention is to further exacerbate the uncaniness of the situation, something that appears to be similar yet also different. Furthermore, the art style allows for the natural depiction of hard edges compared to smoothness that may commonly be associated with higher graphic quality. This reliance on hard edges in graphics may subconciously alert the player, keeping them uncomfortable and on edge.
 
 <p align="center">
     <img src="Images/siren_head.gif" width="400"> <img src="Images/baldis_basic.png" width="400">
 </p>
+<p align="center">
+    <i>Image: Game (Siren Head) by Modus Interactive 2018 & Image: Game (Baldi's Basics) by Micah McGonigal 2018</i>
+</p>
 
 ### 5.2 Audio 
 
-- Exudes a Sombre atmosphere
-- Character Sounds : Footsteps , Flashlight, Breathing, Item interactions, Monster Sounds
-- Music: Quiet / Simple Ambience, Builds up when progressing, Monster encounter is intense, dire, alarming.
+- Exudes a sombre atmosphere
+- Character Sounds : footsteps, flashlight, breathing, item interactions, monster sounds
+- Music: quiet / simple ambience that builds up when progressing, monster encounter is intense, dire, alarming
 
 ### 5.3 Sound Design 
 
@@ -191,17 +240,22 @@ In terms of sound design, sounds should likewise feel lower in quality and granu
 
 ### 5.4 Music 
 
-The music is rather simplistic tonally, typically consisting of low tones. This may build into something more intense as the time progresses. Additionally, intense music may be included for when the monster has been encountered with the player or if the monster is engaged in pursuing the player.
+The music is rather simplistic tonally, typically consisting of low tones. This may build into something more intense as the time progresses. Additionally, intense music may be included for when the monster has encountered the player or is engaged in pursuing the player.
 
-Stylistic examples of intended Game music: 
+Stylistic examples of intended game music: 
 
 [Roaming](./Audio/atmosphere.wav) 
 
 [Ambience](./Audio/sense_of_dread.wav)
 
+Music Referenced:
+
+*Resident Evil 7 Original Soundtrack composed by: 
+Akiyuki  Morimoto, Satoshi Hori, Miwako Chinone, Brian D'Olivera, Cris Velasco. 2017*
+
 ### 5.5 Assets 
 
-In terms of utilising pre built assets, they will typically be sourced from the Unity Store, as a base line, this may include 3d models but edited over with custom textures in order to better suit the theme of the game. 
+In terms of utilising pre-built assets, they will typically be sourced from the Unity Store. As a baseline, this may include 3D models but edited over with custom textures in order to better suit the theme of the game. 
 
 - [Enemy/Monster](https://assetstore.unity.com/packages/3d/characters/humanoids/zombie-30232) 
 - [Enemy/Monster](https://assetstore.unity.com/packages/3d/characters/ghoul-zombie-114531) 
@@ -211,12 +265,14 @@ In terms of utilising pre built assets, they will typically be sourced from the 
 ## 6. User Interface
 
 ### 6.1 Start Screens
+The initial screen will allow the user to either begin the game or access the settings menu. Within the settings menu the player is able to alter screen brightness, game volume and the difficulty level. 
 <p align="center">
     <img src="Images/Main_Menu.png" width=400>
     <img src="Images/Options.png" width=400>
 </p>
 
 ### 6.2 In-Game Screens
+Whilst playing the game the player has a very limited UI. They are able to see their stamina display, represented by a blue bar, but that is all. This means majority of the players attention will be focused towards playing rather than trying to understand different displays. The player can access the in-game setitngs menu by pressing escape.
 <p align="center">
     <img src="Images/Game_UI.png" width=400>
     <img src="Images/Game_Menu.png" width=400>
@@ -234,29 +290,39 @@ In terms of utilising pre built assets, they will typically be sourced from the 
 
 ## 8. Team Communication, Timelines and Task Assignment
 
-
 - Messenger and Zoom (Discussions)
 - Trello (Task Management)
 - Google Docs (Documentation and Planning)
 
-### 8.1 The project has been broken into four main parts:
+### 8.1 Project Breakdow
+The development tasks have been broken into four main areas and each assigned to a team member:
 - World design, audio and maze generation
 - Character and camera
 - Menus, UI, cutscenes and storyline progression
-- Enemies and character interactions 
+- Enemies and character interactions
 
 ### 8.2 Timeline
-- Player movement (3/09)
-- Basic maze (3/09)
-- Enemy #1 (3/09)
-- Main menu (3/09)
-- Tombstones
-- start location
+The tasks have been ordered by completion priority. The main game will be developed by the beginning of week 11, giving 3 weeks to implement user testing and further improvements to the game.
+
+3/09 - Prototype
+- Player and camera movement 
+- Basic maze
+- Enemy #1 
 - Enemy #2
 - Enemy #3
+- Main menu
+- User interface
+
+17/09 - Week 9
+- Tombstones
+- Start location
 - Maze generation
-- Difficulty selection
 - Interactable items (weapons, heirloom etc.) + inventory 
+
+1/10 - Week 11
+- Difficulty selection
+- Cut-scene for game won
+- Cut-scene for game lost
 
 ## 9. Possible Challenges
 
