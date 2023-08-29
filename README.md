@@ -66,7 +66,7 @@ _Repentance_ includes player stamina as a gameplay mechanic that reflects a real
 
 Our playable character by some stroke of misfortune has found themselves in front of a strange structure. They ponder the thought, as towering walls of broken stone filled with dilapidated foliage surround them. They move deeper into the maze lost in thoughts of confusion and regret. They come upon a lone singular house in the centre.
 
-- The main character had received a letter detailed in their parents will, this was to be delivered to them upon their mother/father’s passing
+- The main character had received a letter detailed in their parents will, this was to be delivered to them upon their parent’s passing
 - The letter described a location containing a family heirloom 
 - The location was said to be the old location of the family home, found deep within the countryside
 - The town supposedly no longer exists, but the letter states otherwise and insists that heirloom still resides there
@@ -83,13 +83,13 @@ Our playable character by some stroke of misfortune has found themselves in fron
 - Your family has a dark history  
 - As you go through the labyrinth you may come across information that pertains to what happened
 - The main character's family committed crimes against another family (murder)
-- The heirloom is an old knife / weapon
-- Appease the deceased (This can be set as a optional objective which the player will have to read / actively search for)
+- The heirloom is an old knife
+- Appease the deceased (this is an optional objective which the player will have to actively search for)
 
 ### 2.3 Characters
 
 - Main Character  : Brave but clueless, they understand that the heirloom is of great importance, they also hold great curiosity towards the strange location as well as towards the heirloom.
-- Monster / Enemy / Ghost / Entity : There are three monsters, these represent the victim family: Parents and Child.
+- Monster : There are three monsters, these represent the victim family:
   - Parent : Chases if the player is too close
   - Parent : Teleports randomly
   - Child : Hide and seek, the player needs to hide
@@ -141,8 +141,8 @@ First-person perspective where the player’s view is defined by the camera. The
 
 ### 3.3 Progression
 The player becomes trapped within the maze when the game begins and they must survive 5 minutes until the sun rises in order to win.
-The maze is broken into three main sections each containing different enemies. Each enemy has a different attack style and the player must avoid these enemies as one attack from any enemy will kill the player. 
-Throughout the maze the player will find tombstones that belong to the enemy. The player will have the opportunity to interact with the tombstone, allowing them to uncover different parts of the backstory. The player will also come across different NPCs throughout the maze. The player can interact with the NPCs in the form of a conversation with multiple options that will have different impacts on the difficulty of the game. The game may become easier or harder for the player depending on the choices they make.
+The maze is broken into three main sections each containing different monsters. Each monster has a different attack style and the player must avoid these monsters as one attack from any monster will kill the player. 
+Throughout the maze the player will find tombstones that belong to the monsters. The player will have the opportunity to interact with the tombstone, allowing them to uncover different parts of the backstory. The player will also come across different NPCs throughout the maze. The player can interact with the NPCs in the form of a conversation with multiple options that will have different impacts on the difficulty of the game. The game may become easier or harder for the player depending on the choices they make.
 
 ### 3.4 Gameplay Mechanics
 The player is able to walk (using WASD) or sprint (using WASD + shift). The sprint capability is limited by a stamina bar that is depleted and slowly refilled. Additionally, the player is able to use the F key to equip a flashlight in areas of the maze that are too dark for the player to be able to see in. The player will come across different tombstones and NPCs throughout the maze that they can interact with using the E key.
@@ -153,7 +153,7 @@ In order to make the game more engaging for multiple attempts, a different maze 
 
 ### 4.1 Game World 
 
-The world seen by the player is a maze with an aesthetic style inspired by the Maze Runner. It is 3D and will be displayed on a single screen. Only one level will be available, however, the maze will be randomly generated and changed each time the game is played. This allows the game to be replayed multiple times. The player will also be able to change the difficulty. The player starts in the centre of the maze and will have to navigate through the maze by exploring and avoiding ghosts. Hints may be available to the player if they find them in the maze, however, no map/minimap will be available as it would defeat the purpose of the maze. 
+The world seen by the player is a maze with an aesthetic style inspired by the Maze Runner. It is 3D and will be displayed on a single screen. Only one level will be available, however, the maze will be randomly generated and changed each time the game is played. This allows the game to be replayed multiple times. The player will also be able to change the difficulty. The player starts in the centre of the maze and will have to navigate through the maze by exploring and avoiding monsters. Hints may be available to the player if they find them in the maze, however, no map/minimap will be available as it would defeat the purpose of the maze. 
 
 <p align="center">
   <img src="Images/MazeDiagram.png" width=400>
@@ -165,7 +165,7 @@ The world seen by the player is a maze with an aesthetic style inspired by the M
   <p align="center">
   <img src="Images/Tombstone.png" width=300>
   </p>
-- Heirloom. Looks like an old knife / weapon. Can be found in the maze. 
+- Heirloom. Looks like an old knife. Can be found in the maze. 
   <p align="center">
   <img src="Images/Heirloom.png" width=300>
   </p>
@@ -194,7 +194,7 @@ The world seen by the player is a maze with an aesthetic style inspired by the M
     <p align="center">
     <img src="Images/Letter.png" width=200>
     </p>
-  - Salt (Temporarily repels ghosts from an area)
+  - Salt (Temporarily repels monsters from an area)
     <p align="center">
     <img src="Images/Salt.png" width=200>
     </p>
@@ -307,9 +307,9 @@ The tasks have been ordered by completion priority. The main game will be develo
 3/09 - Prototype
 - Player and camera movement 
 - Basic maze
-- Enemy #1 
-- Enemy #2
-- Enemy #3
+- Monster #1 
+- Monster #2
+- Monster #3
 - Main menu
 - User interface
 
