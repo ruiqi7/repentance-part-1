@@ -8,6 +8,7 @@ public class CameraController : MonoBehaviour
     [Range(1,20)]public int sens = 8;
     float xRotation = 0f;
     public Transform player;
+    private PlayerUI playerUI;
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
