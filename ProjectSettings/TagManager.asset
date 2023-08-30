@@ -7,14 +7,19 @@ TagManager:
   - Wall
   - Interactable
   - Enemy
+  tags: 
+  - Wall
+  - Interactable
+  - Enemy
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
   - Water
   - UI
   - Ground
+  - Postprocessing
+  - 
   - 
   - 
   - 
