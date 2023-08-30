@@ -6,6 +6,7 @@ public class WalkThroughWalls : MonoBehaviour
 {
     [SerializeField] private GameObject target;
     [SerializeField] private float speed;
+    [SerializeField] private float distance;
     void Start()
     {
         transform.LookAt(target.transform.position);
@@ -14,7 +15,7 @@ public class WalkThroughWalls : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if(Vector3.Distance(target.transform.position, transform.position) < 5) {
+        if(Vector3.Distance(target.transform.position, transform.position) < distance) {
             Vector3 newPos = Vector3.MoveTowards(transform.position, target.transform.position, speed);
             transform.position = new Vector3(newPos.x, 0, newPos.z);
             transform.LookAt(new Vector3(target.transform.position.x, 0, target.transform.position.z));
