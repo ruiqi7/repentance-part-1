@@ -48,4 +48,10 @@ public class PlayerController : MonoBehaviour
             player.Move(velocity * Time.deltaTime);
         }
     }
+
+    void OnCollisionEnter(Collision collision) {
+        if (collision.gameObject.tag == "Enemy") {
+            Debug.Log("Game Over");
+        }
+    }
 }
