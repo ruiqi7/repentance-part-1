@@ -34,13 +34,22 @@ Music Referenced: *Horror SFX 3 by Pixabay 2022*
 
 Music Referenced: *Deep Monster Growl by Pixabay 2022*
 
+[Creepy Background Music](./Audio/creepy-background-music.mp3)
+
+Music Referenced: *A Piano With A Creepy Atmosphere For Scary Stories by 
+UNIVERSFIELD 2023*
+
+[Spooky Ambience](./Audio/spooky-ambience.mp3)
+
+Music Referenced: *Scary Spooky Creepy Horror Ambient Dark Piano Cinematic by SoundGalleryByDmitryTaras 2022*
+
 ### 1.3 Target Audience
 Set in a maze with horror elements, the game is targeted at players who are drawn to experiencing thrill in a controlled environment. Additionally, the 5-minute time constraint on the game makes it suitable for players who prefer or can only afford to play in short bursts.
 
 ### 1.4 Unique Selling Points
 
 #### 1.4.1 Compelling Storyline
-_Repentance_ follows a storyline that progressively unfolds as the game scales in difficulty. The player’s role is not only to survive, but also to uncover the gruesome truth about their family and face the consequences of their past actions. The intertwining of survival and story progression creates an immersive experience that keeps players emotionally engaged.
+_Repentance_ follows a storyline that progressively unfolds as the player explores the maze. The player’s role is not only to survive, but also to uncover the gruesome truth about their family and face the consequences of their past actions. The intertwining of survival and story progression creates an immersive experience that keeps players emotionally engaged.
 
 #### 1.4.2 Appealing Aesthetic
 Inspired by the dystopian science fiction film ‘Maze Runner’ (left), the game features a pixelated maze-like environment where the walls are overgrown with foliage (right). The pixelated graphics style creates a nostalgic retro feel while the foliage, just as it conceals the features of the maze, symbolizes the hidden secrets and dangers that lurk in the player’s world.
@@ -64,41 +73,61 @@ _Repentance_ includes player stamina as a gameplay mechanic that reflects a real
 
 ### 2.1 Backstory
 
-Our playable character by some stroke of misfortune has found themselves in front of a strange structure. They ponder the thought, as towering walls of broken stone filled with dilapidated foliage surround them. They move deeper into the maze lost in thoughts of confusion and regret. They come upon a lone singular house in the centre.
+The story starts with the player receiving the will of their estranged parents, it details only one request. That the player retrieve the family heirloom located at the old family home located deep within the countryside.
 
-- The main character had received a letter detailed in their parents will, this was to be delivered to them upon their parent’s passing
-- The letter described a location containing a family heirloom 
+- The main character had received a letter detailed in their parent's will, this was to be delivered to them upon their parent’s passing.
+- The letter described a location containing a family heirloom. 
 - The location was said to be the old location of the family home, found deep within the countryside
-- The town supposedly no longer exists, but the letter states otherwise and insists that heirloom still resides there
-- The player tracks the location confused as to why their parents desperately insisted that they obtain the heirloom 
-- The location can be described as desolate, however the deeper they walk into the town they face large towering walls and an entrance to what appears to be a labyrinth
+- The player tracks the location but they are confused by the request to retrieve the heirloom. 
+- The location can be described as isolated, the house located amongst rolling hills and foilage.
+- The house can be described as a country log cabin, abandoned and worn down.
+- Nothing appears to indicate much danger upon arriving at the location.
+- Your family has a dark history.  
+- The main character's family committed crimes against another family (murder).
+- The heirloom is an old knife.
 
 <p align="center">
     <img src="Images/gamedia2.png" width=300>
     <img src="Images/gamedia1.png" width=300>
 </p>
 
-### 2.2 Additional Information / Story
+### 2.2 Story and Game Progression
 
-- Your family has a dark history  
-- As you go through the labyrinth you may come across information that pertains to what happened
-- The main character's family committed crimes against another family (murder)
-- The heirloom is an old knife
-- Appease the deceased (this is an optional objective which the player will have to actively search for)
+Standard story implementation into the game through use of cut scenes and dialogue poses challenges given the constraints of short gameplay time. Therefore, alternate implementation of story through gameplay elements, art and implicit meaning via objects will be utilised.
+
+- The monsters in the game are the victims of the player's family.
+- Graves and Tombs found as an asset in the game refer to the graves of the victim family. They can be found behind the main house at the start of the game or within the maze when the game starts.
+- The NPCs found in the maze can refer to family members who were involved in the incident involving the victims.
+  - NPC's that were directly involved will further anger the monsters.
+  - NPC's that were indirectly involved will feel remorseful and will aide the player. 
+- Items found in the maze can refer to how the victims were killed or assist in appeasing the victims.
+  - Eyeballs in a jar would suggest that the victims eyes were gouged.
+  - The heirloom is a hunting knife which would suggest a rural / community driven environment.
+  - Using the broken doll for the child monster will delay them from chasing the player.
+  - Using the wilted flower on the tombstones is a sign of remorse towards the victims.
+- As the player encounters different objects and NPCs, they may be able to piece together what happened in the past.
 
 ### 2.3 Characters
 
-- Main Character  : Brave but clueless, they understand that the heirloom is of great importance, they also hold great curiosity towards the strange location as well as towards the heirloom.
-- Monster : There are three monsters, these represent the victim family:
+- Main Character : Brave but clueless, they understand that the heirloom is of great importance, they also hold great curiosity towards the strange location as well as towards the heirloom.
+- Monster : There are three monsters, these represent the victim family
   - Parent : Chases if the player is too close
   - Parent : Teleports randomly
   - Child : Hide and seek, the player needs to hide
-- NPC : These can be encountered in the maze, they can either help or increase the difficulty of the game.
+- NPC : These can be encountered in the maze, they can either help the player or increase the difficulty of the game.
 
-#### 2.3.1 Monster Drafting
+
+#### 2.3.1 NPC Drafting
+
+This particular NPC is mute, and has no eyes, but will return an item when given the Jar of Eyeballs
 <p align="center">
-    <img src="Images/monster_draft_1.png" width=400>
-    <img src="Images/monster_draft_2.png" width=400>
+    <img src="Images/npc_draft.png" width=400>
+</p>
+
+#### 2.3.2 Monster Drafting
+<p align="center">
+    <img src="Images/monster_draft_1.png" width=400 height=350>
+    <img src="Images/monster_draft_2.png" width=400 height=350>
 </p>
 
 ## 3. Game Mechanics
@@ -142,7 +171,7 @@ First-person perspective where the player’s view is defined by the camera. The
 ### 3.3 Progression
 The player becomes trapped within the maze when the game begins and they must survive 5 minutes until the sun rises in order to win.
 The maze is broken into three main sections each containing different monsters. Each monster has a different attack style and the player must avoid these monsters as one attack from any monster will kill the player. 
-Throughout the maze the player will find tombstones that belong to the monsters. The player will have the opportunity to interact with the tombstone, allowing them to uncover different parts of the backstory. The player will also come across different NPCs throughout the maze. The player can interact with the NPCs in the form of a conversation with multiple options that will have different impacts on the difficulty of the game. The game may become easier or harder for the player depending on the choices they make.
+Throughout the maze, the player will find tombstones that belong to the monsters. The player will have the opportunity to interact with the tombstone, allowing them to uncover different parts of the backstory. The player will also come across different NPCs throughout the maze. The player can interact with the NPCs in the form of a conversation with multiple options that will have different impacts on the difficulty of the game. The game may become easier or harder for the player depending on the choices they make.
 
 ### 3.4 Gameplay Mechanics
 The player is able to walk (using WASD) or sprint (using WASD + shift). The sprint capability is limited by a stamina bar that is depleted and slowly refilled. Additionally, the player is able to use the F key to equip a flashlight in areas of the maze that are too dark for the player to be able to see in. The player will come across different tombstones and NPCs throughout the maze that they can interact with using the E key.
@@ -153,7 +182,7 @@ In order to make the game more engaging for multiple attempts, a different maze 
 
 ### 4.1 Game World 
 
-The world seen by the player is a maze with an aesthetic style inspired by the Maze Runner. It is 3D and will be displayed on a single screen. Only one level will be available, however, the maze will be randomly generated and changed each time the game is played. This allows the game to be replayed multiple times. The player will also be able to change the difficulty. The player starts in the centre of the maze and will have to navigate through the maze by exploring and avoiding monsters. Hints may be available to the player if they find them in the maze, however, no map/minimap will be available as it would defeat the purpose of the maze. 
+The world seen by the player is a maze with an aesthetic style inspired by the Maze Runner. It is 3D and will be displayed on a single screen. Only one level will be available, but the maze will be randomly generated and changed each time the game is played. This allows the game to be replayed multiple times. The player will also be able to change the difficulty. The player starts in the centre of the maze and will have to navigate through the maze by exploring and avoiding monsters. Hints may be available to the player if they find them in the maze. However, no map/minimap will be available as it would defeat the purpose of the maze. 
 
 <p align="center">
   <img src="Images/MazeDiagram.png" width=400>
@@ -165,7 +194,7 @@ The world seen by the player is a maze with an aesthetic style inspired by the M
   <p align="center">
   <img src="Images/Tombstone.png" width=300>
   </p>
-- Heirloom. Looks like an old knife. Can be found in the maze. 
+- Heirloom. Looks like an old knife. Starts in the player's inventory. Used for lore purposes.
   <p align="center">
   <img src="Images/Heirloom.png" width=300>
   </p>
@@ -178,7 +207,7 @@ The world seen by the player is a maze with an aesthetic style inspired by the M
     <p align="center">
     <img src="Images/Eyeballs.png" width=200>
     </p>
-  - Broken Doll (Distracts the ghost child)
+  - Broken Doll (Distracts the monster child)
     <p align="center">
     <img src="Images/Doll.png" width=200>
     </p>
@@ -209,9 +238,9 @@ The world seen by the player is a maze with an aesthetic style inspired by the M
 ## 5. Art and Audio
 
 ### 5.1 Art Style  
-- Retro style, Playstation 1 graphics
-- Use of pixelated art
-- Dark, sinister, uncomforting, horrifying
+- Retro style, PSX Graphics
+- Use of pixelated art, Low Poly Models
+- Dark, sinister, uncomforting, uncanny
 <p align="center">
     <img src="Images/ps1_horror.jfif" width="400">
 </p>
@@ -219,7 +248,7 @@ The world seen by the player is a maze with an aesthetic style inspired by the M
     <i>Image: Game (In The Mountains) by DecestiaDev 2021</i>
 </p>
  
-Overall, the intention is to implement lower quality graphics as stylistically, this may allow additional details to be filled in by the player’s mind. In addition, lowering the quality may indicate some level of detachment from reality. In this case, the intention is to further exacerbate the uncaniness of the situation, something that appears to be similar yet also different. Furthermore, the art style allows for the natural depiction of hard edges compared to smoothness that may commonly be associated with higher graphic quality. This reliance on hard edges in graphics may subconciously alert the player, keeping them uncomfortable and on edge.
+Overall, the intention is to implement a lower quality graphics setting as a stylistic choice that can be comparable to PSX Graphics. The idea is that this may allow missing details to be filled in by the player’s mind. In addition, lowering the quality may indicate some level of detachment from reality. However, it also further exacerbates the uncaniness of the scene, it can be described as something that appears familiar yet also different. Furthermore, the art style allows for the natural depiction of hard edges compared to smoothness that may commonly be associated with higher graphic quality. This reliance on hard edges in graphics may subconciously alert the player, keeping them uncomfortable and on edge.
 
 <p align="center">
     <img src="Images/siren_head.gif" width="400"> <img src="Images/baldis_basic.png" width="400">
@@ -232,11 +261,11 @@ Overall, the intention is to implement lower quality graphics as stylistically, 
 
 - Exudes a sombre atmosphere
 - Character Sounds : footsteps, flashlight, breathing, item interactions, monster sounds
-- Music: quiet / simple ambience that builds up when progressing, monster encounter is intense, dire, alarming
+- Music: quiet / simple ambience that builds up progressively, monster encounter is intense, dire, alarming
 
 ### 5.3 Sound Design 
 
-In terms of sound design, sounds should likewise feel lower in quality and granular texture. This is in order to complement the visual aspect of the game thematically. Sounds feel as if they’re passing through a radio. Sounds in the game such as footsteps, doors and breathing shouldn’t feel pleasant to the ear, but should feel deliberate and noticeable. The player's actions in the game will take up valuable time and the sounds in the game should reflect these actions.
+In terms of sound design, sounds will likewise feel lower in quality and granular texture. This is to complement the visual aspect of the game thematically. The sounds will feel as if they’re passing through a radio. Sounds in the game such as footsteps, doors and breathing shouldn’t feel pleasant to the ear, but should feel deliberate and noticeable. The player's actions in the game will take up valuable time and the sounds in the game should reflect these actions.
 
 ### 5.4 Music 
 
@@ -272,7 +301,7 @@ The initial screen will allow the user to either begin the game or access the se
 </p>
 
 ### 6.2 In-Game Screens
-Whilst playing the game the player has a very limited UI. They are able to see their stamina display, represented by a blue bar, but that is all. This means majority of the players attention will be focused towards playing rather than trying to understand different displays. The player can access the in-game setitngs menu by pressing escape.
+Whilst playing the game the player has a very limited UI. They are able to see their stamina display, represented by a blue bar, but that is all. This means majority of the players attention will be focused towards playing rather than trying to understand different displays. The player can access the in-game settings menu by pressing escape.
 <p align="center">
     <img src="Images/Game_UI.png" width=400>
     <img src="Images/Game_Menu.png" width=400>
@@ -287,21 +316,23 @@ Whilst playing the game the player has a very limited UI. They are able to see t
 - Aseprite (Pixel Art Software)
 - FMod (Audio Middleware)
 - Adobe Photoshop (Photo Editing Software)
+- Blender (3D Modeling Software)
 
 ## 8. Team Communication, Timelines and Task Assignment
 
+### 8.1 Communication Platforms
 - Messenger and Zoom (Discussions)
 - Trello (Task Management)
 - Google Docs (Documentation and Planning)
 
-### 8.1 Project Breakdow
-The development tasks have been broken into four main areas and each assigned to a team member:
+### 8.2 Project Breakdown
+The development tasks have been broken into four main areas with each assigned to a team member:
 - World design, audio and maze generation
 - Character and camera
 - Menus, UI, cutscenes and storyline progression
 - Enemies and character interactions
 
-### 8.2 Timeline
+### 8.3 Timeline
 The tasks have been ordered by completion priority. The main game will be developed by the beginning of week 11, giving 3 weeks to implement user testing and further improvements to the game.
 
 3/09 - Prototype
@@ -318,6 +349,7 @@ The tasks have been ordered by completion priority. The main game will be develo
 - Start location
 - Maze generation
 - Interactable items (weapons, heirloom etc.) + inventory 
+- Graphics Asset Creation + Implementation
 
 1/10 - Week 11
 - Difficulty selection
