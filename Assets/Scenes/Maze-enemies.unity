@@ -7729,6 +7729,10 @@ MonoBehaviour:
   target: {fileID: 256224323}
   speed: 0.02
   distance: 30
+  minX: -117
+  maxX: -9
+  minZ: 47
+  maxZ: 140
 --- !u!137 &1693955400
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -7892,7 +7896,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1008475234}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8e706a7ceee2ce34293dfc08336908c2, type: 3}
   m_Name: 
