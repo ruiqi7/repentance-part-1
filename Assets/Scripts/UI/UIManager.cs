@@ -9,6 +9,12 @@ public class UIManager : MonoBehaviour
     [SerializeField] private int pausePageIndex = 0;
 
     private bool isPaused = false;
+    private CameraController cameraController;
+
+    void Start()
+    {
+        cameraController = Camera.main.GetComponent<CameraController>();
+    }
 
     private void Update()
     {
@@ -25,12 +31,16 @@ public class UIManager : MonoBehaviour
             if (isPaused)
             {
                 pages[pausePageIndex].gameObject.SetActive(false);
+                Cursor.lockState = CursorLockMode.Locked;
+                cameraController.enabled = true;
                 Time.timeScale = 1.0f;
                 isPaused = false;
             }
             else
             {
                 ChangePage(pausePageIndex);
+                Cursor.lockState = CursorLockMode.None;
+                cameraController.enabled = false;
                 Time.timeScale = 0.0f;
                 isPaused = true;
             }
