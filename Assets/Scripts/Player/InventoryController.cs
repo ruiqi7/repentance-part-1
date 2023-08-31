@@ -11,6 +11,19 @@ public class InventoryController : MonoBehaviour
     
     private int capacity;
     private int numberOfItems = 0;
+    private KeyCode[] keyCodes =
+    {
+		KeyCode.Alpha1,
+		KeyCode.Alpha2,
+		KeyCode.Alpha3,
+		KeyCode.Alpha4,
+		KeyCode.Alpha5,
+		KeyCode.Alpha6,
+		KeyCode.Alpha7,
+		KeyCode.Alpha8,
+		KeyCode.Alpha9,
+        KeyCode.Alpha0,
+	};
 
     void Start()
     {
@@ -18,13 +31,24 @@ public class InventoryController : MonoBehaviour
         AddToInventory(0);
     }
     
+    void Update()
+    {
+        for (int i = 0; i < keyCodes.Length; i++)
+        {
+            if (Input.GetKeyDown(keyCodes[i]))
+            {
+                RemoveFromInventory(i);
+            }
+        }
+    }
+
     public void AddToInventory(int itemIndex)
     {
         Image item = items[itemIndex];
         if (numberOfItems < capacity)
         {
             Transform inventoryBox = transform.GetChild(numberOfItems);
-            ActivateButton(inventoryBox.gameObject);
+            AddShadow(inventoryBox.gameObject);
             Instantiate(item, inventoryBox);
             numberOfItems += 1;
         }
@@ -38,22 +62,20 @@ public class InventoryController : MonoBehaviour
             Transform item = inventoryBox.GetChild(0);
             Destroy(item.gameObject);
             numberOfItems -= 1;
-            DeactivateButton(inventoryBox.gameObject);
+            RemoveShadow(inventoryBox.gameObject);
         }
     }
 
-    private void ActivateButton(GameObject box)
+    private void AddShadow(GameObject box)
     {
-        box.GetComponent<Button>().interactable = true;
         box.GetComponent<Image>().sprite = occupiedBox;
         RectTransform rt = box.GetComponent<RectTransform>();
         rt.sizeDelta = new Vector2(120, 100);
         rt.anchoredPosition -= new Vector2(15, 14);
     }
 
-    private void DeactivateButton(GameObject box)
+    private void RemoveShadow(GameObject box)
     {
-        box.GetComponent<Button>().interactable = false;
         box.GetComponent<Image>().sprite = unoccupiedBox;
         RectTransform rt = box.GetComponent<RectTransform>();
         rt.sizeDelta = new Vector2(90, 70);
