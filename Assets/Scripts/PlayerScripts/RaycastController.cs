@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
+using Unity.VisualScripting;
+
 public class RaycastController : MonoBehaviour
 {
     // Start is called before the first frame update
     public int interactDistance = 2;
-    [SerializeField] public TextMeshProUGUI promptText;
+    //[SerializeField] public TextMeshProUGUI promptText;
+    public PlayerUI playerUI;
     void Start()
     {
         
@@ -16,7 +18,7 @@ public class RaycastController : MonoBehaviour
     void Update()
     {
         // Creates a Ray from the center of the viewport
-        promptText.text = string.Empty;
+        playerUI.updateText(string.Empty);
         Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
         Debug.DrawRay(ray.origin, ray.direction * 10);
         RaycastHit hit;
@@ -24,7 +26,8 @@ public class RaycastController : MonoBehaviour
         if (Physics.Raycast(ray, out hit, interactDistance)) {
             if (hit.collider.CompareTag("Interactable")) { 
                 InteractableInterface interact = hit.collider.GetComponent<InteractableInterface>();
-                promptText.text = interact.interactText;
+                playerUI.updateText(interact.interactText);
+                playerUI.updateFont(interact.font);
                 if (Input.GetKeyDown(KeyCode.E)) {
                     interact.interact();
                 }
