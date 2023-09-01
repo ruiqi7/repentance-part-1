@@ -35,7 +35,6 @@ public class ChaseCamera : MonoBehaviour
             if(hit.collider.tag == "Wall") {
                 moveRandom();
             } else if(hit.collider.tag == "Player") {
-                Debug.Log("Found player");
                 animator.SetBool("Chasing", true);
                 Vector3 newPos = Vector3.MoveTowards(transform.position, target.transform.position, normalisedSpeed*2);
                 rb.MovePosition(new Vector3(newPos.x, 0, newPos.z));
@@ -50,7 +49,6 @@ public class ChaseCamera : MonoBehaviour
         float normalisedSpeed = speed * (Time.time/300);
         animator.SetBool("Chasing", false);
         if(Vector3.Distance(targetPosition, transform.position) <= 1) {
-            Debug.Log("at position");
             targetPosition = GetRandomTarget();
         }
         RaycastHit hit;

@@ -39,6 +39,11 @@ public class UIManager : MonoBehaviour
             {
                 ChangePage(pausePageIndex);
                 PauseGame();
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
+                cameraController.enabled = false;
+                Time.timeScale = 0.0f;
+                isPaused = true;
             }
         }      
     }
