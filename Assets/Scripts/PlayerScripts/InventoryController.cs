@@ -37,7 +37,7 @@ public class InventoryController : MonoBehaviour
         {
             if (Input.GetKeyDown(keyCodes[i]))
             {
-                RemoveFromInventory(i);
+                // user-item interaction
             }
         }
     }
