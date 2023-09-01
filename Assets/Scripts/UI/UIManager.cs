@@ -7,6 +7,8 @@ public class UIManager : MonoBehaviour
     [SerializeField] private List<GameObject> pages;
     [SerializeField] private bool allowPause = false;
     [SerializeField] private int pausePageIndex = 0;
+    [SerializeField] private int gameOverPageIndex = 0;
+    [SerializeField] private GameObject audioManager;
 
     private bool isPaused = false;
     private CameraController cameraController;
@@ -31,20 +33,32 @@ public class UIManager : MonoBehaviour
             if (isPaused)
             {
                 pages[pausePageIndex].gameObject.SetActive(false);
-                Cursor.lockState = CursorLockMode.Locked;
-                cameraController.enabled = true;
-                Time.timeScale = 1.0f;
-                isPaused = false;
+                ResumeGame();
             }
             else
             {
                 ChangePage(pausePageIndex);
-                Cursor.lockState = CursorLockMode.None;
-                cameraController.enabled = false;
-                Time.timeScale = 0.0f;
-                isPaused = true;
+                PauseGame();
             }
         }      
+    }
+
+    private void ResumeGame()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+        cameraController.enabled = true;
+        Time.timeScale = 1.0f;
+        isPaused = false;
+    }
+
+    private void PauseGame()
+    {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        cameraController.enabled = false;
+        Time.timeScale = 0.0f;
+        isPaused = true;
     }
 
     public void ChangePage(int pageIndex)
@@ -54,5 +68,13 @@ public class UIManager : MonoBehaviour
             page.gameObject.SetActive(false);
         }
         pages[pageIndex].gameObject.SetActive(true);
+    }
+
+    public void GameOver()
+    {
+        ChangePage(gameOverPageIndex);
+        PauseGame();
+        allowPause = false;
+        audioManager.GetComponent<AudioManager>().GameOverMusic();
     }
 }

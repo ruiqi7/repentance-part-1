@@ -17,8 +17,15 @@ public class PlayerController : MonoBehaviour
 
     private bool isGrounded;
     Vector3 velocity;
-    
 
+    [SerializeField] private GameObject uiManager;
+    private UIManager uiManagerScript;
+
+    void Start()
+    {
+        uiManagerScript = uiManager.GetComponent<UIManager>();
+    }
+    
     void FixedUpdate()
     {
         // Keyboard Input
@@ -52,6 +59,7 @@ public class PlayerController : MonoBehaviour
     void OnCollisionEnter(Collision collision) {
         if (collision.gameObject.tag == "Enemy") {
             Debug.Log("Game Over");
+            uiManagerScript.GameOver();
         }
     }
 }

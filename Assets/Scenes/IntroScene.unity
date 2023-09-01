@@ -719,7 +719,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7624085904166251509, guid: c8c9d353d05915b4d864dd708cfbfa0f, type: 3}
   m_PrefabInstance: {fileID: 1253642158912242545}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1253642158912242546}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2c2dd90eef783dd4e88e074e5c9b06fc, type: 3}
@@ -1886,9 +1886,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 129803563161223514, guid: c8c9d353d05915b4d864dd708cfbfa0f, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 739852d6dc614db4b88250148c854dd4, type: 3}
     - target: {fileID: 3147712186644961905, guid: c8c9d353d05915b4d864dd708cfbfa0f, type: 3}
       propertyPath: m_Name
-      value: VolumeManager
+      value: AudioManager
       objectReference: {fileID: 0}
     - target: {fileID: 7624085904166251509, guid: c8c9d353d05915b4d864dd708cfbfa0f, type: 3}
       propertyPath: volumeSlider
@@ -1939,6 +1943,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8c9d353d05915b4d864dd708cfbfa0f, type: 3}
+--- !u!1 &1253642158912242546 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3147712186644961905, guid: c8c9d353d05915b4d864dd708cfbfa0f, type: 3}
+  m_PrefabInstance: {fileID: 1253642158912242545}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1273857614855180286
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2448,6 +2457,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3012028706347158955, guid: 703111c91e5148d4faff5956bc73e4e0, type: 3}
+      propertyPath: audioManager
+      value: 
+      objectReference: {fileID: 1253642158912242546}
     - target: {fileID: 3012028706347158955, guid: 703111c91e5148d4faff5956bc73e4e0, type: 3}
       propertyPath: pages.Array.size
       value: 2
