@@ -12,6 +12,8 @@ public class WalkThroughWalls : MonoBehaviour
     private Animator animator;
     private float startTime;
     private Vector3 targetPosition;
+    [SerializeField] private AudioSource audioSource;
+    private bool handling = false;
     void Start()
     {
         transform.LookAt(target.transform.position);
@@ -24,6 +26,9 @@ public class WalkThroughWalls : MonoBehaviour
         float normalisedSpeed = speed * (Time.time/300);
         if(Vector3.Distance(target.transform.position, transform.position) < distance) {
             animator.SetBool("Chasing", true);
+            if(!handling) {
+                StartCoroutine(HandleAudio());
+            }
             Vector3 newPos = Vector3.MoveTowards(transform.position, target.transform.position, normalisedSpeed*2);
             transform.position = new Vector3(newPos.x, 0, newPos.z);
             transform.LookAt(new Vector3(target.transform.position.x, 0, target.transform.position.z));
@@ -42,5 +47,12 @@ public class WalkThroughWalls : MonoBehaviour
 
      private Vector3 GetRandomTarget() {
         return new Vector3(Random.Range(minX, maxX), 0f, Random.Range(minZ,maxZ));
+    }
+
+    private IEnumerator HandleAudio() {
+        handling = true;
+        audioSource.Play();
+        yield return new WaitForSeconds(15);
+        handling = false;
     }
 }
