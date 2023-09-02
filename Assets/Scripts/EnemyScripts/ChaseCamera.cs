@@ -37,7 +37,6 @@ public class ChaseCamera : MonoBehaviour
             if(hit.collider.tag == "Wall") {
                 moveRandom();
             } else if(hit.collider.tag == "Player") {
-                animator.SetBool("Chasing", true);
                 if(!handling) {
                     StartCoroutine(HandleAudio());
                 }
@@ -52,7 +51,6 @@ public class ChaseCamera : MonoBehaviour
 
     private void moveRandom() {
         float normalisedSpeed = speed * (Time.time/300);
-        animator.SetBool("Chasing", false);
         if(Vector3.Distance(targetPosition, transform.position) <= 1) {
             targetPosition = GetRandomTarget();
         }

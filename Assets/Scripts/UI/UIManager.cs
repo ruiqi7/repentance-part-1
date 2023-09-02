@@ -12,7 +12,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject audioManager;
 
     private bool isPaused = false;
-    private int timePassed = 0;
+    private float timePassed = 0;
     private CameraController cameraController;
 
     void Start()
@@ -28,7 +28,7 @@ public class UIManager : MonoBehaviour
             TogglePause();
         }
         if(!isPaused && currentScene.name == "Maze-enemies") {
-            timePassed += 1;
+            timePassed += Time.deltaTime;
         }
         if(currentScene.name == "Maze-enemies" && timePassed >= 300 && !isPaused) {
             ChangePage(2);
@@ -65,6 +65,8 @@ public class UIManager : MonoBehaviour
         cameraController.enabled = true;
         Time.timeScale = 1.0f;
         isPaused = false;
+        //pages[3].gameObject.SetActive(true);
+       // pages[4].gameObject.SetActive(true);
     }
 
     private void PauseGame()
