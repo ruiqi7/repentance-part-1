@@ -24,7 +24,6 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private Slider staminaBar;
     [SerializeField] private float maxStamina;
-    private bool sprinting = false;
 
     void Start()
     {
