@@ -19,7 +19,7 @@ public class ChaseCamera : MonoBehaviour
     }
 
     private Vector3 GetRandomTarget() {
-        Vector3 newPos = new Vector3(Random.Range(minX, maxX), 0f, Random.Range(minZ,maxZ));
+        Vector3 newPos = new Vector3(Random.Range(minX, maxX), transform.position.y, Random.Range(minZ,maxZ));
         transform.LookAt(new Vector3(newPos.x, 0, newPos.z));
         return newPos;
     }
@@ -38,8 +38,8 @@ public class ChaseCamera : MonoBehaviour
                 Debug.Log("Found player");
                 animator.SetBool("Chasing", true);
                 Vector3 newPos = Vector3.MoveTowards(transform.position, target.transform.position, normalisedSpeed*2);
-                rb.MovePosition(new Vector3(newPos.x, 0, newPos.z));
-                transform.LookAt(new Vector3(target.transform.position.x, 0, target.transform.position.z));
+                rb.MovePosition(new Vector3(newPos.x, transform.position.y, newPos.z));
+                transform.LookAt(new Vector3(target.transform.position.x, transform.position.y, target.transform.position.z));
             } else {
                 moveRandom();
             }
@@ -62,6 +62,6 @@ public class ChaseCamera : MonoBehaviour
             }
         }
         Vector3 newPos = Vector3.MoveTowards(transform.position, targetPosition, normalisedSpeed);
-        rb.MovePosition(new Vector3(newPos.x, 0, newPos.z));
+        rb.MovePosition(new Vector3(newPos.x, transform.position.y, newPos.z));
     }
 }
