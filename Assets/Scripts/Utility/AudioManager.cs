@@ -5,6 +5,7 @@ using UnityEngine;
 public class AudioManager : MonoBehaviour
 {
     [SerializeField] private AudioClip gameOverEffect;
+    [SerializeField] private AudioClip gameWonEffect;
 
     private AudioSource audioSource;
 
@@ -16,6 +17,13 @@ public class AudioManager : MonoBehaviour
     public void GameOverMusic()
     {
         audioSource.clip = gameOverEffect;
+        audioSource.loop = false;
+        audioSource.Play();
+    }
+
+    public void GameWonMusic()
+    {
+        audioSource.clip = gameWonEffect;
         audioSource.loop = false;
         audioSource.Play();
     }
