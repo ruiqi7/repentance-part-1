@@ -48,3 +48,5 @@ MonoBehaviour:
   - {fileID: 0}
   allowPause: 0
   pausePageIndex: 0
+  gameOverPageIndex: 0
+  audioManager: {fileID: 7494799699264542031}
