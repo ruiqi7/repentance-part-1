@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 
@@ -10,7 +11,8 @@ public class NoteInteract : InteractableInterface
     [SerializeField] private GameObject noteCanvas;
     [SerializeField] private TMP_Text noteTextArea;
     [SerializeField] [TextArea] private string noteText;
-    [SerializeField] CameraController camera;
+    [SerializeField] CharacterController player;
+    [SerializeField] CameraController cameraController;
     private bool isOpen = false;
     public override void interact(){
         if(!isOpen){ShowNote();}    
@@ -18,7 +20,8 @@ public class NoteInteract : InteractableInterface
     public void ShowNote(){
         noteTextArea.text = noteText;
         noteCanvas.SetActive(true);
-        camera.enabled = false;
+        player.enabled = false;
+        cameraController.enabled = false;
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         isOpen = true;
@@ -26,10 +29,14 @@ public class NoteInteract : InteractableInterface
     public void CloseNote(){
         noteTextArea.text = string.Empty;
         noteCanvas.SetActive(false);
-        camera.enabled = true;
+        player.enabled = true;
+        cameraController.enabled = true;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         isOpen = false;
+        if(SceneManager.GetActiveScene().name == "StartScene"){
+            SceneManager.LoadScene("Maze-enemies");
+        }
     }
     private void Update(){
         if (Input.GetKeyUp(KeyCode.Escape)) {
