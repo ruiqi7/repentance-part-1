@@ -2,31 +2,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.Rendering.PostProcessing;
-
-// Source: https://www.youtube.com/watch?v=XiJ-kb-NvV4
 
 public class BrightnessController : MonoBehaviour
 {
     [SerializeField] private Slider brightnessSlider;
-    [SerializeField] private PostProcessProfile brightness;
-    [SerializeField] private PostProcessLayer layer;
 
-    AutoExposure exposure;
+    private Image image; 
 
     void Start()
     {
-        brightness.TryGetSettings(out exposure);
+        image = GetComponent<Image>();
         if (!PlayerPrefs.HasKey("brightness"))
         {
-            PlayerPrefs.SetFloat("brightness", 2.0f);
+            PlayerPrefs.SetFloat("brightness", 1.0f);
         }
         LoadBrightness();
     }
 
     public void AdjustBrightness(float value)
     {
-        exposure.keyValue.value = value;
+        Color color = image.color;
+        color.a = 1.0f - value;
+        image.color = color;
         SaveBrightness();
     }
 

@@ -13,7 +13,7 @@ public class VolumeController : MonoBehaviour
     {
         if (!PlayerPrefs.HasKey("volume"))
         {
-            PlayerPrefs.SetFloat("volume", 0.5f);
+            PlayerPrefs.SetFloat("volume", 1.0f);
         }
         LoadVolume();
     }
