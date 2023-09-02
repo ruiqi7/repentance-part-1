@@ -9,6 +9,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private bool allowPause = false;
     [SerializeField] private int pausePageIndex = 0;
     [SerializeField] private int gameOverPageIndex = 0;
+    [SerializeField] private int gameWonPageIndex = 0;
     [SerializeField] private GameObject audioManager;
 
     private bool isPaused = false;
@@ -27,12 +28,13 @@ public class UIManager : MonoBehaviour
         {
             TogglePause();
         }
-        if(!isPaused && currentScene.name == "Maze-enemies") {
+        if (!isPaused && currentScene.name == "Maze-enemies")
+        {
             timePassed += Time.deltaTime;
         }
-        if(currentScene.name == "Maze-enemies" && timePassed >= 300 && !isPaused) {
-            ChangePage(2);
-            PauseGame();
+        if (currentScene.name == "Maze-enemies" && timePassed >= 3 && !isPaused)
+        {
+            GameWon();
         } 
     }
 
@@ -49,11 +51,6 @@ public class UIManager : MonoBehaviour
             {
                 ChangePage(pausePageIndex);
                 PauseGame();
-                Cursor.lockState = CursorLockMode.None;
-                Cursor.visible = true;
-                cameraController.enabled = false;
-                Time.timeScale = 0.0f;
-                isPaused = true;
             }
         }      
     }
@@ -65,8 +62,6 @@ public class UIManager : MonoBehaviour
         cameraController.enabled = true;
         Time.timeScale = 1.0f;
         isPaused = false;
-        //pages[3].gameObject.SetActive(true);
-       // pages[4].gameObject.SetActive(true);
     }
 
     private void PauseGame()
@@ -93,5 +88,13 @@ public class UIManager : MonoBehaviour
         PauseGame();
         allowPause = false;
         audioManager.GetComponent<AudioManager>().GameOverMusic();
+    }
+
+    private void GameWon()
+    {
+        ChangePage(gameWonPageIndex);
+        PauseGame();
+        allowPause = false;
+        audioManager.GetComponent<AudioManager>().GameWonMusic();
     }
 }
