@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject audioManager;
 
     private bool isPaused = false;
+    private int timePassed = 0;
     private CameraController cameraController;
 
     void Start()
@@ -20,10 +22,18 @@ public class UIManager : MonoBehaviour
 
     private void Update()
     {
+        Scene currentScene = SceneManager.GetActiveScene();
         if (Input.GetKeyDown("escape"))
         {
             TogglePause();
         }
+        if(!isPaused && currentScene.name == "Maze-enemies") {
+            timePassed += 1;
+        }
+        if(currentScene.name == "Maze-enemies" && timePassed >= 300 && !isPaused) {
+            ChangePage(2);
+            PauseGame();
+        } 
     }
 
     private void TogglePause()

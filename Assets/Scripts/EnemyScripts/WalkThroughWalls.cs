@@ -30,8 +30,8 @@ public class WalkThroughWalls : MonoBehaviour
                 StartCoroutine(HandleAudio());
             }
             Vector3 newPos = Vector3.MoveTowards(transform.position, target.transform.position, normalisedSpeed*2);
-            transform.position = new Vector3(newPos.x, 0, newPos.z);
-            transform.LookAt(new Vector3(target.transform.position.x, 0, target.transform.position.z));
+            transform.position = new Vector3(newPos.x,transform.position.y, newPos.z);
+            transform.LookAt(new Vector3(target.transform.position.x, transform.position.y, target.transform.position.z));
         } else if(Time.time - startTime >= 10) {
             animator.SetBool("Chasing", false);
             transform.position = GetRandomTarget();
@@ -40,13 +40,13 @@ public class WalkThroughWalls : MonoBehaviour
         } else {
             animator.SetBool("Chasing", false);
             Vector3 newPos = Vector3.MoveTowards(transform.position, targetPosition, normalisedSpeed);
-            transform.position = new Vector3(newPos.x, 0, newPos.z);
+            transform.position = new Vector3(newPos.x, transform.position.y, newPos.z);
             transform.LookAt(targetPosition);
         }
     }
 
      private Vector3 GetRandomTarget() {
-        return new Vector3(Random.Range(minX, maxX), 0f, Random.Range(minZ,maxZ));
+        return new Vector3(Random.Range(minX, maxX), transform.position.y, Random.Range(minZ,maxZ));
     }
 
     private IEnumerator HandleAudio() {
