@@ -25,7 +25,6 @@ public class WalkThroughWalls : MonoBehaviour
     {
         float normalisedSpeed = speed * (Time.time/300);
         if(Vector3.Distance(target.transform.position, transform.position) < distance) {
-            animator.SetBool("Chasing", true);
             if(!handling) {
                 StartCoroutine(HandleAudio());
             }
@@ -33,12 +32,10 @@ public class WalkThroughWalls : MonoBehaviour
             transform.position = new Vector3(newPos.x,transform.position.y, newPos.z);
             transform.LookAt(new Vector3(target.transform.position.x, transform.position.y, target.transform.position.z));
         } else if(Time.time - startTime >= 10) {
-            animator.SetBool("Chasing", false);
             transform.position = GetRandomTarget();
             startTime = Time.time;
             targetPosition = GetRandomTarget();
         } else {
-            animator.SetBool("Chasing", false);
             Vector3 newPos = Vector3.MoveTowards(transform.position, targetPosition, normalisedSpeed);
             transform.position = new Vector3(newPos.x, transform.position.y, newPos.z);
             transform.LookAt(targetPosition);
