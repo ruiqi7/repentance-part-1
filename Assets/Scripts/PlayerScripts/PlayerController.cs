@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.Analytics;
 
 public class PlayerController : MonoBehaviour
@@ -10,7 +11,7 @@ public class PlayerController : MonoBehaviour
     public float speed;
     public float sprintSpeed = 10.0f;
     public float baseSpeed = 5.0f;
-    public float stamina = 100;
+    //public float stamina = 100;
     
     public CharacterController player;
     public LayerMask groundMask;
@@ -21,9 +22,14 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private GameObject uiManager;
     private UIManager uiManagerScript;
 
+    [SerializeField] private Slider staminaBar;
+    [SerializeField] private float maxStamina;
+    private bool sprinting = false;
+
     void Start()
     {
         uiManagerScript = uiManager.GetComponent<UIManager>();
+        staminaBar.value = maxStamina;
     }
     
     void FixedUpdate()
@@ -33,17 +39,17 @@ public class PlayerController : MonoBehaviour
         float zMove = Input.GetAxisRaw("Vertical");
         Vector3 move = transform.right * xMove + transform.forward * zMove;
         player.Move(move * speed * Time.deltaTime);
-        stamina = Math.Clamp(stamina, 0, 100); 
+        //staminaBar.value = Math.Clamp(staminaBar.value, 0, 100); 
         if (Input.GetKey(KeyCode.LeftShift) && Input.GetKey(KeyCode.W))
         {   
             speed = sprintSpeed;
-            stamina -= (15 * Time.deltaTime);
-            if(stamina <= 0){
+            staminaBar.value -= 0.005f;
+            if(staminaBar.value <= 0){
                 speed = baseSpeed;
             }
         } else {
             speed = baseSpeed;
-            stamina += (10 * Time.deltaTime);
+            staminaBar.value += 0.002f;
         }
         
         isGrounded = Physics.Raycast(player.transform.position, Vector3.down, (player.height / 2) + 0.1f, groundMask);
