@@ -32,7 +32,7 @@ public class UIManager : MonoBehaviour
         {
             timePassed += Time.deltaTime;
         }
-        if (currentScene.name == "Maze-enemies" && timePassed >= 3 && !isPaused)
+        if (currentScene.name == "Maze-enemies" && timePassed >= 300 && !isPaused)
         {
             GameWon();
         } 
