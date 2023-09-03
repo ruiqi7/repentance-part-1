@@ -19,6 +19,8 @@ public class UIManager : MonoBehaviour
     void Start()
     {
         cameraController = Camera.main.GetComponent<CameraController>();
+        TogglePause();
+        TogglePause();
     }
 
     private void Update()
