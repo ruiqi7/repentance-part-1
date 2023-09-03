@@ -9,15 +9,17 @@ public class DialogueController : MonoBehaviour
     [SerializeField] public TextMeshProUGUI textBox;
     [SerializeField] public string[] lines;
     [SerializeField] public float textSpeed = 0.1f;
+    [SerializeField] public Color textColor = Color.white;
     private int lineIndex;
     
-    /*public void Start(){
+    public void Start(){
         textBox.text = String.Empty;
-        StartDialogue();
-    }*/
+        StartCoroutine(IntroDialogue());
+    }
 
     public void StartDialogue(){
         textBox.text = String.Empty;
+        textBox.color = textColor;
         lineIndex = 0;
         StartCoroutine(TypeLine());
         
@@ -36,6 +38,11 @@ public class DialogueController : MonoBehaviour
             textBox.text += c;
             yield return new WaitForSeconds(textSpeed);
         }
+        yield return new WaitForSeconds(2);
         NextLine();
+    }
+    IEnumerator IntroDialogue(){
+        yield return new WaitForSeconds(5);
+        StartDialogue();
     }
 }

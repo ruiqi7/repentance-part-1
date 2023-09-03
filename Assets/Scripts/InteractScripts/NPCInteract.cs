@@ -14,11 +14,10 @@ public class NPCInteract : InteractableInterface
             speak();
         }
     }
-
     public void speak(){
-        dialogueBox.SetActive(true);
         isTalking = !isTalking;
         dialogueController.lines = lines;
+        dialogueBox.SetActive(true);
         dialogueController.StartDialogue();
     }
     
