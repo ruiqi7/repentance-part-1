@@ -283,6 +283,7 @@ In terms of utilising pre-built assets, they will typically be sourced from the 
 - [Enemy Texture](https://stock.adobe.com/au/search?k=scribble+texture&asset_id=550895819)
 - [Wall Texture](https://www.textures.com/download/ConcreteMossy0114/128583)
 - [Dirt Texture](https://www.deviantart.com/fabooguy/art/Dirt-Ground-Texture-Tileable-2048x2048-441212191)
+- [Withered Flower Texture](https://unsplash.com/s/photos/chalkboard-texture)
 
 ## 6. User Interface
 

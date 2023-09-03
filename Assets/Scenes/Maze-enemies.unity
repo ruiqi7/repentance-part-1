@@ -13761,11 +13761,11 @@ RectTransform:
   - {fileID: 676612114}
   - {fileID: 146797621}
   - {fileID: 2035365374}
+  - {fileID: 1864267748}
   - {fileID: 23056384}
   - {fileID: 261912870}
   - {fileID: 1720831386}
   - {fileID: 1816275022}
-  - {fileID: 1864267748}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -17.465}
   m_AnchorMin: {x: 0, y: 0}
