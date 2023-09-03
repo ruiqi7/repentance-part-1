@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.070944615, g: 0.078762956, b: 0.14394107, a: 1}
+  m_IndirectSpecularColor: {r: 0.071000196, g: 0.07882018, b: 0.1439682, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -15264,6 +15264,7 @@ MonoBehaviour:
   - They will get revenge...
   dialogueBox: {fileID: 1864267746}
   dialogueController: {fileID: 1864267747}
+  dialogueColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &6393974795555483649
 Transform:
   m_ObjectHideFlags: 0
@@ -15792,3 +15793,10 @@ SceneRoots:
   - {fileID: 1592976858}
   - {fileID: 1124233112}
   - {fileID: 5152971576523400544}
+  - {fileID: 1612755136}
+  - {fileID: 1341127284}
+  - {fileID: 480679736}
+  - {fileID: 1442267335}
+  - {fileID: 1941445907}
+  - {fileID: 385553684}
+  - {fileID: 1072572140884044409}
