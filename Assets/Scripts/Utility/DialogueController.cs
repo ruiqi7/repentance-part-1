@@ -11,12 +11,13 @@ public class DialogueController : MonoBehaviour
     [SerializeField] public float textSpeed = 0.1f;
     private int lineIndex;
     
-    public void Start(){
+    /*public void Start(){
         textBox.text = String.Empty;
         StartDialogue();
-    }
+    }*/
 
     public void StartDialogue(){
+        textBox.text = String.Empty;
         lineIndex = 0;
         StartCoroutine(TypeLine());
         

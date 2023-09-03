@@ -23,8 +23,9 @@ public class NPCInteract : InteractableInterface
     }
     
     public void Update(){
-        if(dialogueBox.activeInHierarchy == false){
+        if(dialogueController.isActiveAndEnabled == false){
             dialogueController.lines = null;
+            dialogueBox.SetActive(false);
             isTalking = !isTalking;
         }
     }
