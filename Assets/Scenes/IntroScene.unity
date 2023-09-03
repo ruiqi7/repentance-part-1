@@ -4104,7 +4104,7 @@ PrefabInstance:
     - target: {fileID: 3658537544381437641, guid: e079d4758bad567419a86129be4e49c0, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1552094821}
     - target: {fileID: 3658537544381437641, guid: e079d4758bad567419a86129be4e49c0, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: AdjustVolume
@@ -4670,6 +4670,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8c9d353d05915b4d864dd708cfbfa0f, type: 3}
+--- !u!114 &1552094821 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7624085904166251509, guid: c8c9d353d05915b4d864dd708cfbfa0f, type: 3}
+  m_PrefabInstance: {fileID: 1552094820}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 912150180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c2dd90eef783dd4e88e074e5c9b06fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1558149325
 GameObject:
   m_ObjectHideFlags: 0
