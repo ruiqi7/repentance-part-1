@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.071000196, g: 0.07882018, b: 0.1439682, a: 1}
+  m_IndirectSpecularColor: {r: 0.070944615, g: 0.078762956, b: 0.14394107, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -13909,7 +13909,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000061035156, y: -299.0654}
+  m_AnchoredPosition: {x: -0.000061035156, y: -200}
   m_SizeDelta: {x: 400, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2035365375
@@ -14463,12 +14463,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6370345302385064575}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.000000059604645, y: -0.000000014901161, z: 0.44759896, w: 0.8942344}
-  m_LocalPosition: {x: -0.021323377, y: -0.03168167, z: 0.030699996}
-  m_LocalScale: {x: 0.3821913, y: 0.49475688, z: 0.49475688}
+  m_LocalRotation: {x: -0.7071069, y: -0, z: 0.000000009422292, w: 0.70710677}
+  m_LocalPosition: {x: 56.76509, y: 6.702071, z: 43.02522}
+  m_LocalScale: {x: 38.21913, y: 49.4757, z: 49.475704}
   m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 5152971576523400544}
+  m_Children:
+  - {fileID: 5152971576523400544}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1210279941197255561
 GameObject:
@@ -14701,11 +14702,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5152971576523400544}
-  - component: {fileID: 5152971576523400545}
-  - component: {fileID: 5152971576523400546}
   m_Layer: 0
   m_Name: W2
-  m_TagString: Interactable
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15101,55 +15100,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2667507994291277607}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.63231933, y: -0.31650028, z: -0.31650025, w: 0.63231915}
-  m_LocalPosition: {x: 60.579193, y: 3.6320698, z: 42.833477}
-  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_LocalRotation: {x: -0.000000029802319, y: 0.000000029802319, z: -0.44759893, w: 0.8942344}
+  m_LocalPosition: {x: 0.09979563, y: 0.0038755012, z: -0.062050696}
+  m_LocalScale: {x: 2.2010603, y: 2.3661814, z: 2.0211942}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4925785689903210048}
-  - {fileID: 1072572140884044409}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1072572140884044409}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: -53.179}
---- !u!114 &5152971576523400545
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2667507994291277607}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34ce5ed5bceaa7b4ab7b338dd41a7088, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactText: Interact [E]
-  font: {fileID: 11400000, guid: 8b084d56abf890d46aa7ef869ae75e86, type: 2}
-  lines:
-  - You shouldn't have come here...
-  - They will get revenge...
-  dialogueBox: {fileID: 1864267746}
-  dialogueController: {fileID: 1864267747}
---- !u!65 &5152971576523400546
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2667507994291277607}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.08282767, y: 0.09135621, z: 0.09094924}
-  m_Center: {x: 0.017222233, y: -0.0043825945, z: -0.006518688}
 --- !u!4 &5248382995058393782
 Transform:
   m_ObjectHideFlags: 0
@@ -15257,13 +15215,55 @@ GameObject:
   m_Component:
   - component: {fileID: 1072572140884044409}
   - component: {fileID: 806977553433665314}
+  - component: {fileID: 6370345302385064577}
+  - component: {fileID: 6370345302385064576}
   m_Layer: 0
   m_Name: W2.001
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &6370345302385064576
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6370345302385064575}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.116987035, y: 0.08695824, z: 0.17393036}
+  m_Center: {x: 0.10217075, y: 0.0017573531, z: -0.049459856}
+--- !u!114 &6370345302385064577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6370345302385064575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34ce5ed5bceaa7b4ab7b338dd41a7088, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactText: Interact [E]
+  font: {fileID: 11400000, guid: 8b084d56abf890d46aa7ef869ae75e86, type: 2}
+  lines:
+  - You shouldn't have come here...
+  - They will get revenge...
+  dialogueBox: {fileID: 1864267746}
+  dialogueController: {fileID: 1864267747}
 --- !u!4 &6393974795555483649
 Transform:
   m_ObjectHideFlags: 0
@@ -15792,9 +15792,3 @@ SceneRoots:
   - {fileID: 1592976858}
   - {fileID: 1124233112}
   - {fileID: 5152971576523400544}
-  - {fileID: 385553684}
-  - {fileID: 1941445907}
-  - {fileID: 480679736}
-  - {fileID: 1341127284}
-  - {fileID: 1612755136}
-  - {fileID: 1442267335}

@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DialogueController : MonoBehaviour
 {
@@ -13,8 +14,11 @@ public class DialogueController : MonoBehaviour
     private int lineIndex;
     
     public void Start(){
-        textBox.text = String.Empty;
-        StartCoroutine(IntroDialogue());
+        if(SceneManager.GetActiveScene().name == "IntroScene"){
+            textBox.text = String.Empty;
+            StartCoroutine(IntroDialogue());
+        }
+        
     }
 
     public void StartDialogue(){
