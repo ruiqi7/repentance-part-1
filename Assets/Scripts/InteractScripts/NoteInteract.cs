@@ -34,7 +34,7 @@ public class NoteInteract : InteractableInterface
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         isOpen = false;
-        if(SceneManager.GetActiveScene().name == "StartScene"){
+        if(SceneManager.GetActiveScene().name == "IntroScene"){
             SceneManager.LoadScene("Maze-enemies");
         }
     }
