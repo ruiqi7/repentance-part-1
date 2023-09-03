@@ -20,10 +20,7 @@ _Repentance_ is a single-player survival game. Trapped in a maze with vengeful m
 _Repentance_ is a survival horror game. The player is challenged to survive for 5 minutes while trapped in the maze by either hiding or running from the monsters. The game sets up suspense by making use of horror game elements such as spine-chilling graphics, dark environments, unexpected attacks and eerie sound effects.
 
 <p align="center">
-    <img src="Images/Slender.png" width=300>
-</p>
-<p align="center">
-    <i>Image: Game (Slender: The Eight Pages) by Mark J. Hadley 2012</i>
+    <img src="Images/Game_UI.png" width=300>
 </p>
 
 [Horror Sound Effect](./Audio/horror-sound-effect.mp3)
@@ -52,21 +49,24 @@ Set in a maze with horror elements, the game is targeted at players who are draw
 _Repentance_ follows a storyline that progressively unfolds as the player explores the maze. The player’s role is not only to survive, but also to uncover the gruesome truth about their family and face the consequences of their past actions. The intertwining of survival and story progression creates an immersive experience that keeps players emotionally engaged.
 
 #### 1.4.2 Appealing Aesthetic
-Inspired by the dystopian science fiction film ‘Maze Runner’ (left), the game features a pixelated maze-like environment where the walls are overgrown with foliage (right). The pixelated graphics style creates a nostalgic retro feel while the foliage, just as it conceals the features of the maze, symbolizes the hidden secrets and dangers that lurk in the player’s world.
+Inspired by the dystopian science fiction film ‘Maze Runner’, the game features a pixelated maze-like environment where the walls are overgrown with foliage. The pixelated graphics style creates a nostalgic retro feel while the foliage, just as it conceals the features of the maze, symbolizes the hidden secrets and dangers that lurk in the player’s world.
 
 <p align="center">
     <img src="Images/Maze_Runner.png" width=300>
-    <img src="Images/Pixelated_Maze.png" width=300>
 </p>
 <p align="center">
-    <i>Image: Film (Maze Runner) by Wes Ball 2014 & Image: Game (Minecraft) by Mojang Studios 2011</i>
+    <i>Image: Film (Maze Runner) by Wes Ball 2014</i>
+</p>
+
+<p align="center">
+    <img src="Images/Maze.png" width=300>
 </p>
 
 #### 1.4.3 Unique Mechanics
 _Repentance_ includes player stamina as a gameplay mechanic that reflects a realistic physical limitation of the player’s character and heightens the challenge of the game. Stamina allows the player to run away from the monsters and gradually replenishes when the player walks. Having to balance multiple resources adds depth to the gameplay and encourages the player to think strategically.
 
 <p align="center">
-    <img src="Images/Game_UI.png" width=300>
+    <img src="Images/Stamina_Bar.png" width=300>
 </p>
 
 ## 2. Story and Narrative
@@ -294,10 +294,12 @@ In terms of utilising pre-built assets, they will typically be sourced from the 
 ## 6. User Interface
 
 ### 6.1 Start Screens
-The initial screen will allow the user to either begin the game or access the settings menu. Within the settings menu the player is able to alter screen brightness, game volume and the difficulty level. 
+The initial screen will allow the user to either begin the game or access the settings menu. Within the settings menu, the player is able to alter screen brightness, game volume and the difficulty level. 
 <p align="center">
     <img src="Images/Main_Menu.png" width=400>
+    <img src="Images/About.png" width=400>
     <img src="Images/Options.png" width=400>
+    <img src="Images/Controls.png" width=400>
 </p>
 
 ### 6.2 In-Game Screens
@@ -305,6 +307,13 @@ Whilst playing the game the player has a very limited UI. They are able to see t
 <p align="center">
     <img src="Images/Game_UI.png" width=400>
     <img src="Images/Game_Menu.png" width=400>
+</p>
+
+### 6.3 End Game Screens
+
+<p align="center">
+    <img src="Images/Game_Won.png" width=400>
+    <img src="Images/Game_Over.png" width=400>
 </p>
 
 ## 7. Technology and Tools
