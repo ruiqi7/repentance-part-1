@@ -286,10 +286,13 @@ Akiyuki  Morimoto, Satoshi Hori, Miwako Chinone, Brian D'Olivera, Cris Velasco. 
 
 In terms of utilising pre-built assets, they will typically be sourced from the Unity Store. As a baseline, this may include 3D models but edited over with custom textures in order to better suit the theme of the game. 
 
-- [Enemy/Monster](https://assetstore.unity.com/packages/3d/characters/humanoids/zombie-30232) 
-- [Enemy/Monster](https://assetstore.unity.com/packages/3d/characters/ghoul-zombie-114531) 
-- [Main Character](https://assetstore.unity.com/packages/3d/characters/humanoids/humans/adventure-character-201384)
-- [Texture](https://assetstore.unity.com/packages/2d/textures-materials/stone/mc-dirt-stone-wall-free-sample-178284) 
+- [Tombstones and Sky](https://assetstore.unity.com/packages/3d/environments/fantasy/free-cartoon-halloween-pack-mobile-vr-45896)
+- [Candle](https://assetstore.unity.com/packages/3d/environments/historic/modular-medieval-lanterns-85527)
+- [Doll](https://assetstore.unity.com/packages/3d/props/horror-assets-69717)
+- [Texture](https://assetstore.unity.com/packages/2d/textures-materials/stone/mc-dirt-stone-wall-free-sample-178284)
+- [Enemy Texture](https://stock.adobe.com/au/search?k=scribble+texture&asset_id=550895819)
+- [Wall Texture](https://www.textures.com/download/ConcreteMossy0114/128583)
+- [Dirt Texture](https://www.deviantart.com/fabooguy/art/Dirt-Ground-Texture-Tileable-2048x2048-441212191)
 
 ## 6. User Interface
 
