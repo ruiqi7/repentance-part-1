@@ -11,7 +11,6 @@ public class PlayerController : MonoBehaviour
     public float speed;
     public float sprintSpeed = 10.0f;
     public float baseSpeed = 5.0f;
-    //public float stamina = 100;
     
     public CharacterController player;
     public LayerMask groundMask;
@@ -37,8 +36,7 @@ public class PlayerController : MonoBehaviour
         float xMove = Input.GetAxisRaw("Horizontal");
         float zMove = Input.GetAxisRaw("Vertical");
         Vector3 move = transform.right * xMove + transform.forward * zMove;
-        player.Move(move * speed * Time.deltaTime);
-        //staminaBar.value = Math.Clamp(staminaBar.value, 0, 100); 
+        player.Move(move * speed * Time.deltaTime); 
         if (Input.GetKey(KeyCode.LeftShift) && Input.GetKey(KeyCode.W))
         {   
             speed = sprintSpeed;
@@ -63,8 +61,8 @@ public class PlayerController : MonoBehaviour
 
     void OnCollisionEnter(Collision collision) {
         if (collision.gameObject.tag == "Enemy") {
-            Debug.Log("Game Over");
-            transform.LookAt(collision.gameObject.transform.position);
+            Vector3 enemyPosition = collision.gameObject.transform.position;
+            transform.LookAt(new Vector3(enemyPosition.x, enemyPosition.y + 1.5f, enemyPosition.z));
             uiManagerScript.GameOver();
         }
     }
