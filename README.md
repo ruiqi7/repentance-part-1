@@ -133,7 +133,7 @@ This particular NPC is mute, and has no eyes, but will return an item when given
 ## 3. Game Mechanics
 
 ### 3.1 Player Perspective
-First-person perspective where the player’s view is defined by the camera. The player is able to move the camera to create the impression that they are looking around the game. The player’s character is largely not visible on the screen. Only the arms will be seen to further enhance the impression of a first-person perspective. This perspective choice enhances the horror genre of the game as the player becomes the character and the limited field of view intensifies the uncertainty of the maze.
+First-person perspective where the player’s view is defined by the camera. The player is able to move the camera to create the impression that they are looking around the game. This perspective choice enhances the horror genre of the game as the player becomes the character and the limited field of view intensifies the uncertainty of the maze.
 
 <p align="center">
     <img src="Images/first-person-game-turn.gif" width=300 height=150>
@@ -141,16 +141,6 @@ First-person perspective where the player’s view is defined by the camera. The
 </p>
 <p align="center">
     <i>Gif: Counter-Strike 2 by Valve Corporation 2023 & Gif: Valorant by Riot Games 2020</i>
-</p>
-
-#### 3.1.1 The player's arms
-
-<p align="center">
-    <img src="Images/Flashlight_Equip_Animation.gif" width=300 height=150>
-    <img src="Images/player_arms.webp" width=300 height=150>
-</p>
-<p align="center">
-    <i>Gif: SCP: Secret Laboratory by Northwood Studios 2023 & Image: <a href="https://assetstore.unity.com/packages/3d/characters/fps-hands-horror-pack-249557">FPS Hands Horror Pack</a></i>
 </p>
 
 ### 3.2 Controls
@@ -297,7 +287,7 @@ In terms of utilising pre-built assets, they will typically be sourced from the 
 ## 6. User Interface
 
 ### 6.1 Start Screens
-The initial screen will allow the user to either begin the game or access the settings menu. Within the settings menu, the player is able to alter screen brightness, game volume and the difficulty level. 
+The initial screen will allow the user to start the game, access an about page, options page and controls page. Within the settings menu, the player is able to alter screen brightness, game volume and the difficulty level. 
 <p align="center">
     <img src="Images/Main_Menu.png" width=400>
     <img src="Images/About.png" width=400>
@@ -306,7 +296,7 @@ The initial screen will allow the user to either begin the game or access the se
 </p>
 
 ### 6.2 In-Game Screens
-Whilst playing the game the player has a very limited UI. They are able to see their stamina display, represented by a blue bar, but that is all. This means majority of the players attention will be focused towards playing rather than trying to understand different displays. The player can access the in-game settings menu by pressing escape.
+Whilst playing the game the player has a very limited UI. They are able to see their stamina display, represented by a blue bar, but that is all. This means majority of the players attention will be focused towards playing rather than trying to understand different displays. The player can access the in-game settings menu by pressing escape. The player can also see an inventory bar which will allow them to interact with different game elements.
 <p align="center">
     <img src="Images/Game_UI.png" width=400>
     <img src="Images/Game_Menu.png" width=400>
