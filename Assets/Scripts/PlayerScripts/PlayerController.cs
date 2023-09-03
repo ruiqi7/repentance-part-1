@@ -64,6 +64,7 @@ public class PlayerController : MonoBehaviour
     void OnCollisionEnter(Collision collision) {
         if (collision.gameObject.tag == "Enemy") {
             Debug.Log("Game Over");
+            transform.LookAt(collision.gameObject.transform.position);
             uiManagerScript.GameOver();
         }
     }

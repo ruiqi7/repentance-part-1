@@ -23,12 +23,12 @@ public class WalkThroughWalls : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        float normalisedSpeed = speed * (Time.time/300);
+        //float normalisedSpeed = speed * (Time.time/300);
         if(Vector3.Distance(target.transform.position, transform.position) < distance) {
             if(!handling) {
                 StartCoroutine(HandleAudio());
             }
-            Vector3 newPos = Vector3.MoveTowards(transform.position, target.transform.position, normalisedSpeed*2);
+            Vector3 newPos = Vector3.MoveTowards(transform.position, target.transform.position, speed*2);
             transform.position = new Vector3(newPos.x,transform.position.y, newPos.z);
             transform.LookAt(new Vector3(target.transform.position.x, transform.position.y, target.transform.position.z));
         } else if(Time.time - startTime >= 10) {
@@ -36,7 +36,7 @@ public class WalkThroughWalls : MonoBehaviour
             startTime = Time.time;
             targetPosition = GetRandomTarget();
         } else {
-            Vector3 newPos = Vector3.MoveTowards(transform.position, targetPosition, normalisedSpeed);
+            Vector3 newPos = Vector3.MoveTowards(transform.position, targetPosition, speed);
             transform.position = new Vector3(newPos.x, transform.position.y, newPos.z);
             transform.LookAt(targetPosition);
         }

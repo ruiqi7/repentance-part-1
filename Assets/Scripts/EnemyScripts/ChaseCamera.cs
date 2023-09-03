@@ -29,7 +29,7 @@ public class ChaseCamera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float normalisedSpeed = speed * (Time.time/300);
+        //float normalisedSpeed = speed * (Time.time/300);
         RaycastHit hit;
         Vector3 direction = target.transform.position - transform.position;
         Debug.DrawRay(transform.position, direction, Color.yellow);
@@ -40,7 +40,7 @@ public class ChaseCamera : MonoBehaviour
                 if(!handling) {
                     StartCoroutine(HandleAudio());
                 }
-                Vector3 newPos = Vector3.MoveTowards(transform.position, target.transform.position, normalisedSpeed*2);
+                Vector3 newPos = Vector3.MoveTowards(transform.position, target.transform.position, speed*2);
                 rb.MovePosition(new Vector3(newPos.x, transform.position.y, newPos.z));
                 transform.LookAt(new Vector3(target.transform.position.x, transform.position.y, target.transform.position.z));
             } else {
@@ -50,7 +50,7 @@ public class ChaseCamera : MonoBehaviour
     }
 
     private void moveRandom() {
-        float normalisedSpeed = speed * (Time.time/300);
+        //float normalisedSpeed = speed * (Time.time/300);
         if(Vector3.Distance(targetPosition, transform.position) <= 1) {
             targetPosition = GetRandomTarget();
         }
@@ -62,7 +62,7 @@ public class ChaseCamera : MonoBehaviour
                 targetPosition = GetRandomTarget();
             }
         }
-        Vector3 newPos = Vector3.MoveTowards(transform.position, targetPosition, normalisedSpeed);
+        Vector3 newPos = Vector3.MoveTowards(transform.position, targetPosition, speed);
         rb.MovePosition(new Vector3(newPos.x, transform.position.y, newPos.z));
     }
 
