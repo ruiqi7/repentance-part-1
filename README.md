@@ -340,18 +340,22 @@ The tasks have been ordered by completion priority. The main game will be develo
 3/09 - Prototype
 - Player and camera movement 
 - Basic maze
-- Monster #1 
+- Monster #1 + 3D model
 - Monster #2
 - Monster #3
 - Main menu
 - User interface
+- Tombstone
+- Start location
+- Interactable items (weapons, heirloom etc.) + display of inventory
+- basic NPC interaction
 
 17/09 - Week 9
-- Tombstones
-- Start location
 - Maze generation
-- Interactable items (weapons, heirloom etc.) + inventory 
 - Graphics Asset Creation + Implementation
+- 3D model of monster #2 and #3
+- 3D model of NPCs
+- detailed NPC interactions
 
 1/10 - Week 11
 - Difficulty selection
