@@ -4424,6 +4424,7 @@ MonoBehaviour:
 
     1990 You
     Arrived'
+  player: {fileID: 165251168}
   cameraController: {fileID: 1773207377}
 --- !u!65 &1558149330
 BoxCollider:

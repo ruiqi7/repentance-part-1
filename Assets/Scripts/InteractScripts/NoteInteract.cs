@@ -39,7 +39,7 @@ public class NoteInteract : InteractableInterface
         }
     }
     private void Update(){
-        if (Input.GetKeyUp(KeyCode.Escape)) {
+        if (Input.GetKeyUp(KeyCode.Escape) && isOpen) {
             CloseNote();
         }
     }
